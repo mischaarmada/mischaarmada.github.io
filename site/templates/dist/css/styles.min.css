@@ -1309,7 +1309,7 @@ hr {
 
 body {
 	font-family: 'Post Grotesk Book', sans-serif;
-	background-color: #1552c6;
+	background:linear-gradient(to top, #58151A, #BC2909, #BA6D09, #71A8EE, #3072EB, #1552C6, #0542A8);
 	color: #fff;
 	font-size: 21px
 }
@@ -1448,7 +1448,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .text.is--alt p, .text.is--alt p a {
-	color: #a7A09a
+	color: #FFFFFF
 }
 
 .underlay {
@@ -1876,7 +1876,7 @@ section.home__landing .text {
 }
 
 section.home__content {
-	background-color: #1552c6;
+	background:linear-gradient(to top, #58151A, #BC2909, #BA6D09, #71A8EE, #3072EB, #1552C6, #0542A8);
 	position: relative;
 	top: calc(100vh - 15px);
 	z-index: 2
