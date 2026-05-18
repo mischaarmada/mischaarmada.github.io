@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KCRW Marketing Assessment 2026</title>
+<style>
+:root {
+  --bg: #FFFFFF;
+  --bg2: #F5F5F2;
+  --bg3: #EEECEA;
+  --tx: #1A1A1A;
+  --tx2: #555555;
+  --tx3: #888888;
+  --bd: rgba(0,0,0,0.13);
+  --bd2: rgba(0,0,0,0.22);
+  --bgs: #E8F5EE; --txs: #1A6B3A; --bds: #4CAF50;
+  --bgd: #FEF0EE; --txd: #B83232; --bdd: #E06060;
+  --bgw: #FFF8E7; --txw: #7A4A00; --bdw: #E0A020;
+  --bgi: #E8F0FA; --txi: #1A4A7A; --bdi: #5090D8;
+  --r: 8px; --rl: 12px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);background:#F0EEE9;color:var(--tx);min-height:100vh}
+#wrap{display:flex;max-width:1100px;margin:0 auto;min-height:100vh;box-shadow:0 0 40px rgba(0,0,0,.12)}
+#nav{width:200px;flex-shrink:0;background:var(--bg2);border-right:.5px solid var(--bd);display:flex;flex-direction:column}
+#nav-hd{padding:16px 14px;border-bottom:.5px solid var(--bd)}
+.nav-brand{font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--tx3)}
+.nav-title{font-size:12px;font-weight:600;color:var(--tx);margin-top:3px;line-height:1.35}
+.nb{display:block;width:100%;text-align:left;padding:8px 14px;background:transparent;border:none;border-left:2px solid transparent;font-size:12px;color:var(--tx2);cursor:pointer;font-weight:400;font-family:var(--font);line-height:1.3;transition:background .15s}
+.nb:hover{background:rgba(0,0,0,.04)}
+.nb.on{background:var(--bg);border-left-color:#0F6E56;color:var(--tx);font-weight:600}
+.nav-group{padding:6px 14px 2px;font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--tx3);margin-top:4px}
+#nav-ft{padding:12px 14px;border-top:.5px solid var(--bd);font-size:9.5px;color:var(--tx3);line-height:1.6;margin-top:auto}
+#main{flex:1;padding:28px 34px;background:var(--bg);overflow-y:auto}
+.sec{display:none}.sec.on{display:block}
+.lbl{font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--tx3);display:block;margin-bottom:7px}
+h2{font-size:19px;font-weight:600;color:var(--tx);line-height:1.25;margin-bottom:9px}
+.body{font-size:13.5px;color:var(--tx2);line-height:1.72;margin-bottom:12px}
+.div{height:.5px;background:var(--bd);margin:18px 0}
+.card{background:var(--bg);border:.5px solid var(--bd);border-radius:var(--rl);padding:16px 20px;margin-bottom:12px}
+.sbg{background:var(--bg2);border:.5px solid var(--bd);border-radius:var(--rl);padding:16px 20px;margin-bottom:12px}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:8px;margin:12px 0}
+.sb{background:var(--bg2);border-radius:var(--r);padding:11px 13px}
+.sn{font-size:19px;font-weight:600;color:var(--tx);line-height:1}
+.sl{font-size:11.5px;color:var(--tx2);margin-top:3px}
+.ss{font-size:10px;color:var(--tx3);margin-top:2px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:8px;margin:10px 0}
+.alert{background:var(--bgd);border:.5px solid var(--bdd);border-radius:var(--r);padding:12px 15px;font-size:12.5px;color:var(--txd);line-height:1.65;margin:10px 0}
+.warn{background:var(--bgw);border:.5px solid var(--bdw);border-radius:var(--r);padding:12px 15px;font-size:12.5px;color:var(--txw);line-height:1.65;margin:10px 0}
+.good{border-left:2px solid var(--bds);padding:10px 15px;font-size:13px;color:var(--tx2);line-height:1.68;margin:10px 0}
+.info{background:var(--bgi);border:.5px solid var(--bdi);border-radius:var(--r);padding:12px 15px;font-size:12.5px;color:var(--txi);line-height:1.65;margin:10px 0}
+.disclaimer{background:#FFF3E0;border:.5px solid #FF9800;border-radius:var(--r);padding:14px 18px;font-size:12.5px;color:#5a3000;line-height:1.7;margin:10px 0}
+.urgent{background:#FEF0EE;border-left:3px solid #C0392B;padding:12px 16px;font-size:13px;color:var(--txd);line-height:1.65;margin:10px 0}
+.tbl{width:100%;border-collapse:collapse;font-size:12.5px;margin:10px 0}
+.tbl th{text-align:left;padding:7px 10px;background:var(--bg2);font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--tx3);border-bottom:.5px solid var(--bd)}
+.tbl td{padding:9px 10px;border-bottom:.5px solid var(--bd);color:var(--tx2);vertical-align:top}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr:hover td{background:var(--bg2)}
+.tbl .hl td{background:#EEF5FF;color:var(--tx);font-weight:600}
+.tbl .warn-row td{background:#FFF8E7}
+.bx{display:inline-block;padding:2px 7px;border-radius:3px;font-size:10.5px;font-weight:600}
+.bg{background:var(--bgs);color:var(--txs)}.bb{background:var(--bgi);color:var(--txi)}.ba{background:var(--bgw);color:var(--txw)}.br{background:var(--bgd);color:var(--txd)}.bk{background:var(--bg2);color:var(--tx2)}
+.grade{border-radius:var(--r);padding:9px 10px;text-align:center}
+.grade .gn{font-size:22px;font-weight:700;line-height:1}
+.grade .gl{font-size:10px;opacity:.85;margin-top:2px;line-height:1.3}
+.grade.gg{background:var(--bgs)}.grade.gg .gn,.grade.gg .gl{color:var(--txs)}
+.grade.gb{background:var(--bgi)}.grade.gb .gn,.grade.gb .gl{color:var(--txi)}
+.grade.ga{background:var(--bgw)}.grade.ga .gn,.grade.ga .gl{color:var(--txw)}
+.grade.gr{background:var(--bgd)}.grade.gr .gn,.grade.gr .gl{color:var(--txd)}
+.exp-row{border:.5px solid var(--bd);border-radius:0 var(--r) var(--r) 0;margin-bottom:7px;overflow:hidden}
+.exp-hd{padding:10px 14px;cursor:pointer;display:flex;justify-content:space-between;align-items:flex-start;gap:8px;background:var(--bg);user-select:none}
+.exp-hd:hover,.exp-hd.open{background:var(--bg2)}
+.exp-hd.open{border-bottom:.5px solid var(--bd)}
+.exp-body{display:none;padding:13px 15px;background:var(--bg2);font-size:12.5px;color:var(--tx2);line-height:1.65}
+.pt{font-size:13px;font-weight:600;color:var(--tx);line-height:1.3;flex:1}
+.psub{font-size:11.5px;color:var(--tx2);margin-top:2px}
+.arr{font-size:10px;color:var(--tx3);flex-shrink:0;margin-top:3px}
+.ctitle{font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:7px}
+.citem{font-size:12px;color:var(--tx2);margin-bottom:4px;padding-left:13px;position:relative;line-height:1.45}
+.mrow{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0;border-bottom:.5px solid var(--bd);font-size:12.5px;gap:10px}
+.mrow:last-child{border-bottom:none}
+.ml{color:var(--tx2)}.mv{font-weight:600;color:var(--tx);text-align:right;flex-shrink:0}
+.ms{font-size:10.5px;color:var(--tx3)}
+.phase-tag{color:#fff;font-size:9.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:3px 9px;border-radius:3px}
+.cite{font-size:10px;color:var(--tx3);font-style:italic;margin-top:4px}
+.source-tag{display:inline-block;background:var(--bg2);border:.5px solid var(--bd);padding:1px 6px;border-radius:3px;font-size:10px;color:var(--tx3);margin-left:5px;cursor:default}
+.ref-item{font-size:12px;color:var(--tx2);padding:8px 0;border-bottom:.5px solid var(--bd);line-height:1.6}
+.ref-item:last-child{border-bottom:none}
+.ref-num{font-weight:600;color:var(--tx);min-width:24px;display:inline-block}
+.cover-logo{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#0F6E56;margin-bottom:32px}
+.cover-title{font-size:30px;font-weight:600;color:var(--tx);line-height:1.2;margin-bottom:12px}
+.cover-sub{font-size:15px;color:var(--tx2);line-height:1.6;max-width:560px;margin-bottom:32px}
+.cover-meta{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px}
+.cover-meta-box{background:var(--bg2);border:.5px solid var(--bd);border-radius:var(--r);padding:14px 16px}
+.cover-meta-label{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--tx3);margin-bottom:5px}
+.cover-meta-val{font-size:13px;color:var(--tx);line-height:1.6}
+@media(max-width:700px){
+  #wrap{flex-direction:column}
+  #nav{width:100%;border-right:none;border-bottom:.5px solid var(--bd)}
+  .nb{display:inline-block;width:auto;border-left:none;border-bottom:2px solid transparent;padding:7px 10px;font-size:11px}
+  .nb.on{border-left:none;border-bottom-color:#0F6E56}
+  .nav-group{display:none}
+  #nav-ft{display:none}
+  .g2{grid-template-columns:1fr}
+  .cover-meta{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+
+<div id="nav">
+  <div id="nav-hd">
+    <div class="nav-brand">Mischa Armada</div>
+    <div class="nav-title">KCRW Marketing<br>Assessment · 2026</div>
+  </div>
+  <div class="nav-group">Overview</div>
+  <button class="nb on" data-sec="cover" onclick="show('cover')">Cover &amp; purpose</button>
+  <button class="nb" data-sec="disclaimer" onclick="show('disclaimer')">Disclaimer &amp; methodology</button>
+  <button class="nb" data-sec="exec" onclick="show('exec')">Executive summary</button>
+  <div class="nav-group">Analysis</div>
+  <button class="nb" data-sec="brand" onclick="show('brand')">Brand &amp; audience</button>
+  <button class="nb" data-sec="channels" onclick="show('channels')">Channel mix</button>
+  <button class="nb" data-sec="email" onclick="show('email')">Email &amp; newsletters</button>
+  <button class="nb" data-sec="members" onclick="show('members')">Members &amp; conversion</button>
+  <button class="nb" data-sec="joinpage" onclick="show('joinpage')">join.kcrw.com analysis</button>
+  <button class="nb" data-sec="technical" onclick="show('technical')">Technical performance</button>
+  <button class="nb" data-sec="churn" onclick="show('churn')">Churn &amp; retention</button>
+  <button class="nb" data-sec="digital" onclick="show('digital')">Website &amp; digital</button>
+  <button class="nb" data-sec="tech" onclick="show('tech')">Tech &amp; infrastructure</button>
+  <div class="nav-group">Action</div>
+  <button class="nb" data-sec="opps" onclick="show('opps')">Growth opportunities</button>
+  <button class="nb" data-sec="plan" onclick="show('plan')">90-day action plan</button>
+  <div class="nav-group">Appendix</div>
+  <button class="nb" data-sec="refs" onclick="show('refs')">References &amp; sources</button>
+  <button class="nb" data-sec="contact" onclick="show('contact')">Contact</button>
+  <div id="nav-ft">Prepared by Mischa Armada<br>Growth &amp; Creative Strategy · May 2026<br>mischa.armada@gmail.com</div>
+</div>
+
+<div id="main">
+
+<!-- COVER -->
+<div class="sec on" id="cover">
+  <div class="cover-logo">Growth &amp; Creative Strategy</div>
+  <div class="cover-title">KCRW Marketing Assessment:<br>Membership Growth &amp; Conversion Opportunity</div>
+  <div class="cover-sub">A channel-by-channel analysis of KCRW's audience, membership conversion funnel, and digital performance — with prioritized recommendations to drive more paying monthly members.</div>
+
+  <div class="cover-meta">
+    <div class="cover-meta-box">
+      <div class="cover-meta-label">Prepared for</div>
+      <div class="cover-meta-val">KCRW Leadership</div>
+    </div>
+    <div class="cover-meta-box">
+      <div class="cover-meta-label">Prepared by</div>
+      <div class="cover-meta-val">Mischa Armada<br>Growth &amp; Creative Strategy<br>mischa.armada@gmail.com<br>818.371.2271</div>
+    </div>
+    <div class="cover-meta-box">
+      <div class="cover-meta-label">Date</div>
+      <div class="cover-meta-val">May 16, 2026</div>
+    </div>
+    <div class="cover-meta-box">
+      <div class="cover-meta-label">Status</div>
+      <div class="cover-meta-val">Version 2 — Updated with new data sources</div>
+    </div>
+  </div>
+
+  <div class="div"></div>
+
+  <div style="margin-bottom:16px">
+    <div class="lbl">Primary goal</div>
+    <p class="body">Increase the number of paying recurring (monthly) members — converting more of KCRW's existing 2M+ monthly audience into the membership relationship. Secondary goals: deepen app engagement and expand reach on high-performing channels.</p>
+  </div>
+
+  <div style="margin-bottom:16px">
+    <div class="lbl">What was analyzed</div>
+    <p class="body">Website traffic and engagement (kcrw.com and join.kcrw.com), membership and conversion economics, email and newsletter program, join page technical performance, channel mix, SEO health, tech infrastructure, and competitor benchmarking — all cross-referenced against publicly available financial data (FY2024 audited financials and Form 990).</p>
+  </div>
+
+  <div style="margin-bottom:16px">
+    <div class="lbl">Why this matters right now</div>
+    <p class="body">A pledge drive is active at the time of this report. The membership conversion page (join.kcrw.com) has a mobile performance score of 32/100 and registered a 42% month-over-month traffic decline in April 2026. Every day of the pledge drive running on a technically underperforming page is measurable lost revenue.</p>
+  </div>
+
+  <div class="urgent">⚡ <strong>Pledge drive is live.</strong> Technical and conversion optimizations on join.kcrw.com should be treated as urgent — not scheduled. A 15.8-second mobile load time on the payment page during an active fundraising window is a direct revenue loss.</div>
+
+  <div class="div"></div>
+
+  <div class="lbl">Sources used in this assessment</div>
+  <table class="tbl">
+    <thead><tr><th>#</th><th>Source</th><th>Date</th><th>Used for</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>SimilarWeb — kcrw.com Website Performance</td><td>April 2026</td><td>Traffic, channels, engagement, social, outbound</td></tr>
+      <tr><td>2</td><td>SimilarWeb — join.kcrw.com Website Performance</td><td>April 2026</td><td>Membership page traffic, referrals, device split</td></tr>
+      <tr><td>3</td><td>SimilarWeb — kcrw.com vs join.kcrw.com Comparative</td><td>April 2026</td><td>Cross-domain engagement comparison</td></tr>
+      <tr><td>4</td><td>Google PageSpeed Insights — join.kcrw.com (Mobile)</td><td>May 15, 2026</td><td>Technical performance, load times, accessibility</td></tr>
+      <tr><td>5</td><td>SEMrush — kcrw.com SEO Dashboard</td><td>May 14–15, 2026</td><td>Organic traffic, keywords, authority, AI visibility</td></tr>
+      <tr><td>6</td><td>KCRW Media Kit</td><td>February 2026</td><td>Audience size, member count, newsletter data</td></tr>
+      <tr><td>7</td><td>BuiltWith Technology Profile — kcrw.com</td><td>May 2026</td><td>Tech stack, email platforms, CRMs</td></tr>
+      <tr><td>8</td><td>KCRW Foundation Audited Financial Statements</td><td>FY2024</td><td>Revenue, fundraising costs, expense structure</td></tr>
+      <tr><td>9</td><td>IRS Form 990 — KCRW Foundation</td><td>FY2024</td><td>Member count baseline, programmatic data</td></tr>
+      <tr><td>10</td><td>KCRW Annual Report</td><td>2024</td><td>Audience, events, programming, growth narrative</td></tr>
+      <tr><td>11</td><td>Live email review — Art Insider &amp; 5 Things newsletters</td><td>May 2026</td><td>CTA presence, UTM structure, editorial format</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="sec" id="disclaimer">
+  <span class="lbl">Disclaimer &amp; methodology</span>
+  <h2>This assessment is based entirely on publicly available information.</h2>
+
+  <div class="disclaimer">
+    <strong>Important:</strong> All data in this assessment was sourced from publicly accessible tools and published documents — SimilarWeb, Google PageSpeed Insights, SEMrush, KCRW's published media kit, audited financial statements, Form 990, and direct observation of live newsletter emails. I do not have access to KCRW's internal analytics (Google Analytics, HubSpot, Salesforce, or Blackbaud/Convio), actual member counts beyond what's published, email open rates by newsletter, historical conversion data from join.kcrw.com, or internal reporting of any kind.<br><br>
+    As a result, some figures are estimates based on industry benchmarks, publicly stated data, or logical inference. Where estimates are used, they are labeled as such. The purpose of this assessment is to identify directional opportunities and prioritize action — not to present findings as internally verified. Numbers should be cross-referenced against KCRW's actual data before being used as the basis for budget or staffing decisions.
+  </div>
+
+  <div class="div"></div>
+
+  <div class="lbl">Methodology</div>
+  <p class="body" style="margin-bottom:10px">This assessment was conducted across five stages:</p>
+
+  <div class="exp-row" style="border-left:2px solid #0F6E56">
+    <div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Stage 1 — Financial baseline</div><div class="psub">Understanding the revenue model and structural context</div></div><span class="arr">▼</span></div>
+    <div class="exp-body">Review of KCRW Foundation's FY2024 audited financial statements and Form 990. Identified total revenue, membership revenue, fundraising costs, operating structure, and cost-per-dollar-raised. This established the financial context for all conversion opportunity sizing.</div>
+  </div>
+  <div class="exp-row" style="border-left:2px solid #0F6E56">
+    <div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Stage 2 — Audience and channel analysis</div><div class="psub">Mapping reach, engagement, and traffic sources</div></div><span class="arr">▼</span></div>
+    <div class="exp-body">SimilarWeb analysis of kcrw.com and join.kcrw.com covering monthly visits, engagement metrics, device distribution, channel mix, social referral breakdown, and outgoing traffic patterns. Cross-referenced with media kit audience data (Nielsen Scarborough, SoundStack, HubSpot).</div>
+  </div>
+  <div class="exp-row" style="border-left:2px solid #0F6E56">
+    <div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Stage 3 — Email and newsletter review</div><div class="psub">Direct observation of live newsletter emails</div></div><span class="arr">▼</span></div>
+    <div class="exp-body">Direct review of live public-facing newsletter emails (Art Insider and 5 Things, May 2026) to assess CTA presence, UTM structure, content format, and conversion architecture. This corrected an earlier assumption that no member ask existed in newsletters — CTAs are present but image-only and generic in copy.</div>
+  </div>
+  <div class="exp-row" style="border-left:2px solid #0F6E56">
+    <div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Stage 4 — Technical performance audit</div><div class="psub">PageSpeed Insights and SEMrush analysis</div></div><span class="arr">▼</span></div>
+    <div class="exp-body">Google PageSpeed Insights audit of join.kcrw.com on mobile (May 15, 2026). SEMrush SEO dashboard review of kcrw.com covering organic traffic, keyword rankings, authority score, backlinks, and AI search visibility. These sources identified the most urgent technical barriers to conversion.</div>
+  </div>
+  <div class="exp-row" style="border-left:2px solid #0F6E56">
+    <div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Stage 5 — Benchmarking and opportunity sizing</div><div class="psub">Comparing against public radio peers and industry standards</div></div><span class="arr">▼</span></div>
+    <div class="exp-body">Conversion rates, retention rates, fundraising cost benchmarks, and email performance benchmarks sourced from NPR/Edison research, Litmus email industry reports, and public media peer comparison (KCUR, WGBH, WBEZ, KUOW). All opportunity revenue estimates are conservative and labeled as estimates.</div>
+  </div>
+
+  <div class="div"></div>
+
+  <div class="warn"><strong>What this assessment cannot tell you:</strong> Actual membership conversion rate from join.kcrw.com, email open/click rates by newsletter, HubSpot workflow status, Blackbaud/Convio member data, pledge drive performance to date, or any internal A/B test results. All of these would materially sharpen the recommendations.</div>
+</div>
+
+<!-- EXECUTIVE SUMMARY -->
+<div class="sec" id="exec">
+  <span class="lbl">Executive summary</span>
+  <h2>Strong brand. Growing audience. Conversion infrastructure needs work.</h2>
+  <p class="body">KCRW is one of the most culturally powerful public media brands in the country. Its email newsletter program, events community, and audience loyalty are exceptional by any benchmark. The constraint on membership growth is not audience size or brand quality — it is the absence of an optimized, technically sound conversion layer between the 2 million people who touch KCRW monthly and the 72,000 who are paying members. A pledge drive is active right now. The most urgent issue is not strategy — it is that the payment page loads in 15+ seconds on mobile for first-time visitors.</p>
+
+  <div class="urgent">⚡ <strong>Active pledge drive.</strong> join.kcrw.com received 56,602 visits in April 2026 — down 41.99% from March. Mobile performance score: 32/100. LCP: 15.8 seconds. 50.4% of visitors arrive on mobile. Every hour of the pledge drive running on this page is measurable lost revenue. <span class="source-tag">Source: SimilarWeb Apr 2026, PageSpeed May 15 2026</span></div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin:16px 0">
+    <div style="background:var(--bgs);border:.5px solid var(--bds);border-left:3px solid var(--txs);border-radius:var(--r);padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:var(--tx);margin-bottom:3px">Brand strength</div><div style="font-size:11px;font-weight:600;color:var(--txs)">Exceptional ✓</div></div>
+    <div style="background:var(--bgs);border:.5px solid var(--bds);border-left:3px solid var(--txs);border-radius:var(--r);padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:var(--tx);margin-bottom:3px">Email asset</div><div style="font-size:11px;font-weight:600;color:var(--txs)">Strong ✓</div></div>
+    <div style="background:var(--bgs);border:.5px solid var(--bds);border-left:3px solid var(--txs);border-radius:var(--r);padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:var(--tx);margin-bottom:3px">Events</div><div style="font-size:11px;font-weight:600;color:var(--txs)">Strong ✓</div></div>
+    <div style="background:var(--bgi);border:.5px solid var(--bdi);border-left:3px solid var(--txi);border-radius:var(--r);padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:var(--tx);margin-bottom:3px">Podcasts</div><div style="font-size:11px;font-weight:600;color:var(--txi)">Growing ↑</div></div>
+    <div style="background:var(--bgi);border:.5px solid var(--bdi);border-left:3px solid var(--txi);border-radius:var(--r);padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:var(--tx);margin-bottom:3px">FM radio</div><div style="font-size:11px;font-weight:600;color:var(--txi)">Stable ↔</div></div>
+    <div style="background:var(--bgi);border:.5px solid var(--bdi);border-left:3px solid var(--txi);border-radius:var(--r);padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:var(--tx);margin-bottom:3px">Social</div><div style="font-size:11px;font-weight:600;color:var(--txi)">Selective</div></div>
+    <div style="background:var(--bgw);border:.5px solid var(--bdw);border-left:3px solid var(--txw);border-radius:var(--r);padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:var(--tx);margin-bottom:3px">Website</div><div style="font-size:11px;font-weight:600;color:var(--txw)">Needs attention</div></div>
+    <div style="background:var(--bgw);border:.5px solid var(--bdw);border-left:3px solid var(--txw);border-radius:var(--r);padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:var(--tx);margin-bottom:3px">Member conversion</div><div style="font-size:11px;font-weight:600;color:var(--txw)">Needs attention</div></div>
+    <div style="background:var(--bgd);border:.5px solid var(--bdd);border-left:3px solid var(--txd);border-radius:var(--r);padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:var(--tx);margin-bottom:3px">Join page tech</div><div style="font-size:11px;font-weight:600;color:var(--txd)">⚡ Urgent — act now</div></div>
+    <div style="background:var(--bgd);border:.5px solid var(--bdd);border-left:3px solid var(--txd);border-radius:var(--r);padding:10px 12px"><div style="font-size:12.5px;font-weight:600;color:var(--tx);margin-bottom:3px">Tech stack</div><div style="font-size:11px;font-weight:600;color:var(--txd)">Fragmented</div></div>
+  </div>
+
+  <div class="g2">
+    <div class="card" style="margin:0">
+      <div class="ctitle" style="color:var(--txs)">What is exceptional</div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txs)">+</span>72K members in 37 countries; $9.96M membership revenue +5.4% YoY <span class="source-tag">Media Kit Feb 2026</span></div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txs)">+</span>845K newsletter subscribers — HubSpot data, 44% avg open rate (2× industry benchmark)</div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txs)">+</span>Cultural brand equity: Mick Jagger, Adele, Patrick Dempsey, Jamie Lee Curtis</div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txs)">+</span>100K Summer Nights RSVPs; 200K+ annual event attendees</div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txs)">+</span>UTM attribution confirmed in live newsletters (utm_source=hs_email active)</div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txs)">+</span>Member CTAs present in newsletters — both image and text formats</div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txs)">+</span>SEO 100/100 on join.kcrw.com; Core Web Vitals passed (real-user data)</div>
+    </div>
+    <div class="card" style="margin:0">
+      <div class="ctitle" style="color:var(--txd)">What needs fixing now</div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txd)">−</span>join.kcrw.com: 32/100 mobile performance, 15.8s LCP — pledge drive is live <span class="source-tag">PageSpeed May 15 2026</span></div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txd)">−</span>join.kcrw.com traffic: 56K visits, −42% MoM — severe pipeline drop <span class="source-tag">SimilarWeb Apr 2026</span></div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txd)">−</span>Newsletter CTAs are image-only — disappear when images are blocked; generic copy ("Protect What You Trust") vs. benefits-led</div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txd)">−</span>Monthly giving is not the default option on join.kcrw.com</div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txd)">−</span>kcrw.com organic search down 18.27%; 0 paid keywords anywhere <span class="source-tag">SEMrush May 2026</span></div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txd)">−</span>$5.75M fundraising cost to generate $9.96M = 58¢ per $1 raised <span class="source-tag">Audited Financials FY2024</span></div>
+      <div class="citem"><span style="position:absolute;left:0;color:var(--txd)">−</span>4 email platforms, siloed data, no unified behavioral view <span class="source-tag">BuiltWith May 2026</span></div>
+    </div>
+  </div>
+
+  <div class="sbg" style="margin-top:14px">
+    <div class="lbl" style="margin-bottom:6px">The brief</div>
+    <p style="font-size:13.5px;color:var(--tx);line-height:1.75;font-style:italic">KCRW has a world-class brand, an exceptional email list, and an audience predisposed to give — 99× more likely to donate to arts organizations than the average adult. The barrier to growing from 72K to 100K members is not audience size or willingness. It is a technically broken payment page, a newsletter CTA strategy that relies on images rather than text, no welcome sequence for new subscribers, and a donation flow that defaults to one-time giving rather than monthly. These are solvable problems — most within 30 days.</p>
+  </div>
+
+  <div class="sg">
+    <div class="sb"><div class="sn">2M+</div><div class="sl">Monthly audience</div><div class="ss">All platforms combined</div></div>
+    <div class="sb"><div class="sn">72K</div><div class="sl">Active members</div><div class="ss">Media Kit, Feb 2026</div></div>
+    <div class="sb"><div class="sn">845K</div><div class="sl">Newsletter subscribers</div><div class="ss">HubSpot, Feb 2026</div></div>
+    <div class="sb" style="border-left:2px solid var(--txd)"><div class="sn" style="color:var(--txd)">32/100</div><div class="sl">Join page mobile score</div><div class="ss">PageSpeed, May 15 2026</div></div>
+    <div class="sb" style="border-left:2px solid var(--txd)"><div class="sn" style="color:var(--txd)">−42%</div><div class="sl">Join page traffic MoM</div><div class="ss">SimilarWeb, Apr 2026</div></div>
+    <div class="sb"><div class="sn">58¢</div><div class="sl">Cost per $1 raised</div><div class="ss">Benchmark: 20–35¢</div></div>
+  </div>
+</div>
+
+<!-- BRAND -->
+<div class="sec" id="brand">
+  <span class="lbl">Brand &amp; audience health</span>
+  <h2>World-class brand. Deeply loyal, high-income audience. Undermonetized relative to reach.</h2>
+  <p class="body">KCRW's audience profile is exceptional for membership conversion purposes. This is not a general public audience — it is a highly educated, high-income, arts-engaged audience that is already predisposed to donate. The barrier to membership conversion is not willingness; it is the absence of a frictionless, well-timed ask.</p>
+
+  <div class="card">
+    <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:12px">Audience profile <span class="source-tag">Nielsen Scarborough Aug 2024–Jul 2025, P18+</span></div>
+    <div class="g3">
+      <div class="sb"><div class="sn" style="font-size:16px">71%</div><div class="sl">College degree or more</div><div class="ss">vs. 45% US adult avg</div></div>
+      <div class="sb"><div class="sn" style="font-size:16px">58%</div><div class="sl">Household income $100K+</div><div class="ss">vs. 31% LA metro avg</div></div>
+      <div class="sb"><div class="sn" style="font-size:16px">60%</div><div class="sl">Home ownership</div><div class="ss">Financial stability indicator</div></div>
+      <div class="sb"><div class="sn" style="font-size:16px">67×</div><div class="sl">More likely B2B decisions</div><div class="ss">Nielsen Scarborough 2025</div></div>
+      <div class="sb"><div class="sn" style="font-size:16px">99×</div><div class="sl">More likely arts donor</div><div class="ss">Built-in member mindset</div></div>
+      <div class="sb"><div class="sn" style="font-size:16px">28%</div><div class="sl">Ages 55–64 (largest cohort)</div><div class="ss">Core loyalty demographic</div></div>
+    </div>
+  </div>
+
+  <div class="good">This audience does not need to be persuaded that public radio matters. 99× more likely to donate to arts organizations means the conversion task is mechanical, not philosophical — make the ask clear, make the path frictionless, and make monthly giving the default.</div>
+
+  <div class="div"></div>
+  <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:8px">Web traffic vs. peer public radio stations <span class="source-tag">SimilarWeb Apr 2026</span></div>
+  <table class="tbl">
+    <thead><tr><th>Station</th><th>Monthly web visits</th><th>Context</th></tr></thead>
+    <tbody>
+      <tr><td>KCUR (Kansas City)</td><td>1.17M</td><td>Smaller market, highest web traffic in group</td></tr>
+      <tr><td>WGBH (Boston)</td><td>965K</td><td>Flagship PBS/NPR affiliate</td></tr>
+      <tr class="hl"><td>KCRW (Los Angeles)</td><td>777K</td><td>Most prestigious brand — 3rd in web traffic</td></tr>
+      <tr><td>KUOW (Seattle)</td><td>573K</td><td>Strong recent digital investment</td></tr>
+      <tr><td>WBEZ (Chicago)</td><td>570K</td><td>NPR Chicago affiliate</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:11.5px;color:var(--tx3);margin-top:6px;line-height:1.5">Note: KCRW's newsletter list (845K) likely exceeds any station in this peer group. Audience is migrating from web to email as the primary digital surface — strategically sound if conversion is optimized in that channel.</p>
+</div>
+
+<!-- CHANNELS -->
+<div class="sec" id="channels">
+  <span class="lbl">Channel mix analysis</span>
+  <h2>Seven channels reaching 2M+ monthly. No unified conversion pipeline connecting them.</h2>
+  <p class="body">KCRW runs a genuinely multi-platform operation. The challenge is that each channel operates in relative isolation — no systematic lead flow from any channel into the membership relationship. Tap any row to expand.</p>
+
+  <div style="border:.5px solid var(--bd);border-radius:var(--rl);overflow:hidden;margin-top:14px">
+    <div style="display:grid;grid-template-columns:2fr 1.6fr .7fr .8fr 1fr;padding:7px 12px;background:var(--bg2);border-bottom:.5px solid var(--bd)">
+      <span style="font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3)">Channel</span>
+      <span style="font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3)">Reach</span>
+      <span style="font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3)">Grade</span>
+      <span style="font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3)">Trend</span>
+      <span style="font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3)">Verdict</span>
+    </div>
+
+    <div style="border-bottom:.5px solid var(--bd)">
+      <div style="display:grid;grid-template-columns:2fr 1.6fr .7fr .8fr 1fr;padding:10px 12px;cursor:pointer;align-items:center;background:var(--bg);border-left:2px solid var(--bdi)" onclick="toggleCh(this)">
+        <span style="font-size:13px;font-weight:600;color:var(--tx)">FM Radio &amp; Broadcast</span>
+        <span style="font-size:12px;color:var(--tx2)">550K weekly listeners</span>
+        <span><span class="bx bb">Stable</span></span>
+        <span style="font-size:12px;color:var(--tx2)">↔ Stable</span>
+        <span style="font-size:12px;color:var(--tx2)">Sustain</span>
+      </div>
+      <div style="display:none;padding:13px 15px;background:var(--bg2);font-size:12.5px;color:var(--tx2);line-height:1.65;border-top:.5px solid var(--bd)">FM is the membership bedrock — drive-time habit creates the strongest listener loyalty of any format. But under-35 discovery is now entirely digital, and pledge drives cost 58¢/$1 raised vs. a fraction of that for email conversion. <span class="source-tag">Audited Financials FY2024</span></div>
+    </div>
+
+    <div style="border-bottom:.5px solid var(--bd)">
+      <div style="display:grid;grid-template-columns:2fr 1.6fr .7fr .8fr 1fr;padding:10px 12px;cursor:pointer;align-items:center;background:var(--bg);border-left:2px solid var(--bds)" onclick="toggleCh(this)">
+        <span style="font-size:13px;font-weight:600;color:var(--tx)">Podcasts</span>
+        <span style="font-size:12px;color:var(--tx2)">825K uniques · 1.1M+ downloads</span>
+        <span><span class="bx bg">Growing</span></span>
+        <span style="font-size:12px;color:var(--tx2)">↑ Growing</span>
+        <span style="font-size:12px;color:var(--tx2)">Grow</span>
+      </div>
+      <div style="display:none;padding:13px 15px;background:var(--bg2);font-size:12.5px;color:var(--tx2);line-height:1.65;border-top:.5px solid var(--bd)">4 new shows launched FY2024. Sam Sanders Show reached national NPR syndication. No podcast-specific membership CTA in episodes and no email capture on show pages — a significant missed conversion moment at scale. <span class="source-tag">KCRW Annual Report 2024</span></div>
+    </div>
+
+    <div style="border-bottom:.5px solid var(--bd)">
+      <div style="display:grid;grid-template-columns:2fr 1.6fr .7fr .8fr 1fr;padding:10px 12px;cursor:pointer;align-items:center;background:#EEF7F2;border-left:2px solid var(--bds)" onclick="toggleCh(this)">
+        <span style="font-size:13px;font-weight:600;color:var(--txs)">⚡ Email &amp; Newsletters</span>
+        <span style="font-size:12px;color:var(--tx2)">845K subscribers</span>
+        <span><span class="bx bg">Strong</span></span>
+        <span style="font-size:12px;color:var(--tx2)">↑ Growing</span>
+        <span style="font-size:12px;font-weight:600;color:var(--txs)">⚡ Optimize</span>
+      </div>
+      <div style="display:none;padding:13px 15px;background:var(--bg2);font-size:12.5px;color:var(--tx2);line-height:1.65;border-top:.5px solid var(--bd)">845K subscribers with UTM attribution confirmed active. Member CTAs are present but image-based — invisible when images are blocked and impossible to personalize or A/B test without design changes. Copy is generic ("Protect What You Trust") rather than benefits-led. No welcome sequence for new subscribers. Highest-leverage channel in the portfolio. <span class="source-tag">Live email review May 2026, Media Kit Feb 2026</span></div>
+    </div>
+
+    <div style="border-bottom:.5px solid var(--bd)">
+      <div style="display:grid;grid-template-columns:2fr 1.6fr .7fr .8fr 1fr;padding:10px 12px;cursor:pointer;align-items:center;background:var(--bg);border-left:2px solid var(--bds)" onclick="toggleCh(this)">
+        <span style="font-size:13px;font-weight:600;color:var(--tx)">Events</span>
+        <span style="font-size:12px;color:var(--tx2)">100K RSVPs · 200K+ annual</span>
+        <span><span class="bx bg">Strong</span></span>
+        <span style="font-size:12px;color:var(--tx2)">↑ Breakout</span>
+        <span style="font-size:12px;color:var(--tx2)">Scale + capture</span>
+      </div>
+      <div style="display:none;padding:13px 15px;background:var(--bg2);font-size:12.5px;color:var(--tx2);line-height:1.65;border-top:.5px solid var(--bd)">Summer Nights: 16 events, a genuine LA cultural moment. Masquerade revival: 900 attendees after 6-year hiatus. Event RSVPs are not systematically entered into email nurture flows — 100K warm, brand-engaged contacts per year without a conversion path. <span class="source-tag">KCRW Annual Report 2024</span></div>
+    </div>
+
+    <div style="border-bottom:.5px solid var(--bd)">
+      <div style="display:grid;grid-template-columns:2fr 1.6fr .7fr .8fr 1fr;padding:10px 12px;cursor:pointer;align-items:center;background:var(--bg);border-left:2px solid var(--bdw)" onclick="toggleCh(this)">
+        <span style="font-size:13px;font-weight:600;color:var(--tx)">Website (kcrw.com)</span>
+        <span style="font-size:12px;color:var(--tx2)">777K visits/mo (−9.7%)</span>
+        <span><span class="bx ba">Needs attention</span></span>
+        <span style="font-size:12px;color:var(--txd)">↓ Declining</span>
+        <span style="font-size:12px;color:var(--tx2)">Stabilize</span>
+      </div>
+      <div style="display:none;padding:13px 15px;background:var(--bg2);font-size:12.5px;color:var(--tx2);line-height:1.65;border-top:.5px solid var(--bd)">Strong organic search (27.57%), 4:03 avg visit duration. Organic traffic down 18.27% per SEMrush. 46.44% bounce rate with limited inline email capture. Outgoing clicks: 10.70% to substack.com (confirmed, trending up 93%). <span class="source-tag">SimilarWeb Apr 2026, SEMrush May 2026</span></div>
+    </div>
+
+    <div>
+      <div style="display:grid;grid-template-columns:2fr 1.6fr .7fr .8fr 1fr;padding:10px 12px;cursor:pointer;align-items:center;background:var(--bg);border-left:2px solid var(--bdi)" onclick="toggleCh(this)">
+        <span style="font-size:13px;font-weight:600;color:var(--tx)">Social Media</span>
+        <span style="font-size:12px;color:var(--tx2)">517K YT · 310K IG · 210K FB</span>
+        <span><span class="bx bb">Selective</span></span>
+        <span style="font-size:12px;color:var(--tx2)">↔ Selective</span>
+        <span style="font-size:12px;color:var(--tx2)">Sustain + test</span>
+      </div>
+      <div style="display:none;padding:13px 15px;background:var(--bg2);font-size:12.5px;color:var(--tx2);line-height:1.65;border-top:.5px solid var(--bd)">Social drives 2.61% of kcrw.com web traffic and 1.31% of join.kcrw.com traffic — low direct conversion impact. Reddit is the #1 social referrer to kcrw.com at 35.73% with no dedicated capture experience for new visitors. Zero paid social spend confirmed. <span class="source-tag">SimilarWeb Apr 2026</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- EMAIL -->
+<div class="sec" id="email">
+  <span class="lbl">Email &amp; newsletter performance</span>
+  <h2>845K subscribers. 44% open rate. CTAs present but underoptimized.</h2>
+  <p class="body">A previous version of this assessment incorrectly stated that no member conversion ask existed in any newsletter. That was wrong. Direct review of live newsletters confirms member CTAs are present in multiple formats. The actual issue is different — and still significant: the CTAs are image-only, carry generic pledge-drive copy, and are not personalized to the reader's content affinity.</p>
+
+  <div class="good"><strong>What's confirmed:</strong> Both Art Insider and 5 Things newsletters contain member CTAs. Art Insider has a mid-newsletter banner ("KCRW. Protect What You Trust. Donate Now.") and a text footer CTA. 5 Things has an image banner plus a member testimonial image. UTM parameters are active (utm_source=hs_email, utm_medium=email, utm_campaign=[newsletter_name]). <span class="source-tag">Live email review, May 2026</span></div>
+
+  <div class="warn"><strong>The actual issue:</strong> Every member CTA in every newsletter reviewed is image-based. Images are blocked by default in many email clients — meaning a significant portion of recipients never sees the ask. Generic copy ("Protect What You Trust. Donate Now.") does not tell a subscriber who hasn't joined what they'd get. No benefits are listed. No personalization by content affinity. This is the gap — not the absence of a CTA, but the quality and resilience of the CTA that exists.</div>
+
+  <div class="div"></div>
+
+  <div class="sg">
+    <div class="sb"><div class="sn">845K</div><div class="sl">Total subscribers</div><div class="ss">HubSpot, Feb 2026</div></div>
+    <div class="sb"><div class="sn">44%</div><div class="sl">Avg open rate</div><div class="ss">2× industry benchmark</div></div>
+    <div class="sb"><div class="sn">9</div><div class="sl">Active newsletters</div><div class="ss">Feb 2026</div></div>
+    <div class="sb"><div class="sn">$138</div><div class="sl">Avg member gift/yr</div><div class="ss">$9.96M ÷ 72K est.</div></div>
+    <div class="sb" style="border-left:2px solid var(--bdw)"><div class="sn" style="color:var(--txw)">Image only</div><div class="sl">Current CTA format</div><div class="ss">No text fallback confirmed</div></div>
+    <div class="sb"><div class="sn">UTM ✓</div><div class="sl">Attribution active</div><div class="ss">Confirmed in live emails</div></div>
+  </div>
+
+  <div style="font-size:13px;font-weight:600;color:var(--tx);margin:14px 0 8px">Newsletter breakdown <span class="source-tag">KCRW Media Kit, Feb 2026</span></div>
+  <table class="tbl">
+    <thead><tr><th>Newsletter</th><th>Day</th><th style="text-align:right">Subscribers</th><th>CTA present?</th><th>CTA format</th></tr></thead>
+    <tbody>
+      <tr><td style="font-weight:600;color:var(--tx)">5 Things</td><td>Monday</td><td style="text-align:right">220,000</td><td><span class="bx ba">Image-only</span></td><td>Banner + testimonial image</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">KCRW Insider</td><td>Wednesday</td><td style="text-align:right">196,000</td><td><span class="bx bk">Not reviewed</span></td><td>Unknown</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Music Insider</td><td>Thursday</td><td style="text-align:right">146,000</td><td><span class="bx bk">Not reviewed</span></td><td>Unknown</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">KCRW Local</td><td>Thursday</td><td style="text-align:right">123,000</td><td><span class="bx bk">Not reviewed</span></td><td>Unknown</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">5 Songs</td><td>Tuesday</td><td style="text-align:right">118,000</td><td><span class="bx bk">Not reviewed</span></td><td>Unknown</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Entertainment</td><td>Friday</td><td style="text-align:right">84,000</td><td><span class="bx bk">Not reviewed</span></td><td>Unknown</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Art Insider</td><td>Tuesday</td><td style="text-align:right">36,000</td><td><span class="bx ba">Image-only</span></td><td>Mid-newsletter banner + text footer</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Design + Architecture</td><td>Tue (biweekly)</td><td style="text-align:right">33,000</td><td><span class="bx bk">Not reviewed</span></td><td>Unknown</td></tr>
+      <tr><td style="font-weight:600;color:var(--tx)">Good Food</td><td>Saturday</td><td style="text-align:right">25,000</td><td><span class="bx bk">Not reviewed</span></td><td>On Substack — separate platform</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:11px;color:var(--tx3);margin-top:4px;line-height:1.5">Note: Only Art Insider and 5 Things were directly reviewed. CTA status for other newsletters is not confirmed. "Not reviewed" does not mean absent.</p>
+
+  <div class="alert"><strong>The Substack fragmentation is confirmed.</strong> 5 Things actively links the bagel roundup to kcrwgoodfood.substack.com mid-newsletter. kcrw.com outgoing traffic to substack.com is 10.70% and trending up 93.64% MoM. KCRW is routing its own engaged audience to infrastructure it does not own. <span class="source-tag">Live email review May 2026, SimilarWeb Apr 2026</span></div>
+
+  <div class="info"><strong>Recommendation:</strong> Convert all image-based CTAs to HTML text + button format. Add specific member benefits to the ask ("Get early access to Summer Nights, Nick's texts, and film presales"). Test affinity-matched copy: music readers hear about Masquerade; news readers hear about journalist access. This is a copy and template change — no new content or audience required.</div>
+</div>
+
+<!-- MEMBERS -->
+<div class="sec" id="members">
+  <span class="lbl">Members &amp; conversion analysis</span>
+  <h2>3.6% audience-to-member conversion. 8.5% email-to-member conversion. Both below peer benchmarks.</h2>
+  <p class="body">KCRW has 72K members from a 2M+ monthly audience — a 3.6% conversion rate against a public radio benchmark of 5–8%. The more actionable figure: 72K members out of 845K newsletter subscribers = 8.5% email conversion. 91.5% of people who opted in to weekly KCRW emails have not converted to membership.</p>
+
+  <div class="card">
+    <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:14px">Audience → member funnel <span class="source-tag">Media Kit Feb 2026, SimilarWeb Apr 2026</span></div>
+    <div style="margin-bottom:8px"><div style="display:flex;align-items:center;gap:10px;margin-bottom:2px"><span style="font-size:11.5px;color:var(--tx2);min-width:155px;text-align:right;flex-shrink:0">Total monthly audience</span><div style="flex:1;background:var(--bg2);border-radius:3px;height:26px;overflow:hidden"><div style="height:100%;background:#1D9E75;width:100%;display:flex;align-items:center;padding:0 10px"><span style="font-size:12px;font-weight:600;color:#fff">2,000,000+</span></div></div></div><div style="font-size:11px;color:var(--tx3);padding-left:165px">FM, podcast, web, app, social combined</div></div>
+    <div style="margin-bottom:8px"><div style="display:flex;align-items:center;gap:10px;margin-bottom:2px"><span style="font-size:11.5px;color:var(--tx2);min-width:155px;text-align:right;flex-shrink:0">Email subscribers</span><div style="flex:1;background:var(--bg2);border-radius:3px;height:26px;overflow:hidden"><div style="height:100%;background:#1D9E75;opacity:.78;width:42%;display:flex;align-items:center;padding:0 10px"><span style="font-size:12px;font-weight:600;color:#fff">845,000</span></div></div></div><div style="font-size:11px;color:var(--tx3);padding-left:165px">42% of total audience opted in to email</div></div>
+    <div style="margin-bottom:8px"><div style="display:flex;align-items:center;gap:10px;margin-bottom:2px"><span style="font-size:11.5px;color:var(--tx2);min-width:155px;text-align:right;flex-shrink:0">Arrive at join page</span><div style="flex:1;background:var(--bg2);border-radius:3px;height:26px;overflow:hidden"><div style="height:100%;background:#E0A020;width:7%;display:flex;align-items:center;padding:0 10px;min-width:65px"><span style="font-size:12px;font-weight:600;color:#fff">~57K</span></div></div></div><div style="font-size:11px;color:var(--tx3);padding-left:165px">56,602 monthly — only 7% of main site visitors reach the membership page</div></div>
+    <div><div style="display:flex;align-items:center;gap:10px;margin-bottom:2px"><span style="font-size:11.5px;color:var(--tx2);min-width:155px;text-align:right;flex-shrink:0">Active members</span><div style="flex:1;background:var(--bg2);border-radius:3px;height:26px;overflow:hidden"><div style="height:100%;background:#085041;width:8%;display:flex;align-items:center;padding:0 10px;min-width:65px"><span style="font-size:12px;font-weight:600;color:#fff">72,000</span></div></div></div><div style="font-size:11px;color:var(--tx3);padding-left:165px">US and 37 countries — Media Kit, February 2026</div></div>
+  </div>
+
+  <div class="card">
+    <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:12px">Membership economics <span class="source-tag">Audited Financials FY2024, Media Kit Feb 2026</span></div>
+    <div class="mrow"><span class="ml">Membership revenue</span><div style="text-align:right"><div class="mv">$9,957,791</div><div class="ms">+5.4% YoY from $9.44M</div></div></div>
+    <div class="mrow"><span class="ml">Active members</span><div style="text-align:right"><div class="mv">72,000</div><div class="ms">Media kit, February 2026</div></div></div>
+    <div class="mrow"><span class="ml">Average annual gift (implied)</span><div style="text-align:right"><div class="mv">~$138/member</div><div class="ms">Estimated: $9.96M ÷ 72K</div></div></div>
+    <div class="mrow"><span class="ml">Total fundraising cost</span><div style="text-align:right"><div class="mv">$5,753,604</div><div class="ms">Staff, professional fees, pledge drives</div></div></div>
+    <div class="mrow"><span class="ml">Cost per $1 raised</span><div style="text-align:right"><div class="mv" style="color:var(--txd)">57.7¢</div><div class="ms">Industry benchmark: 20–35¢</div></div></div>
+    <div class="mrow"><span class="ml">LTV — annual donor at 80% retention</span><div style="text-align:right"><div class="mv">~$690/member</div><div class="ms">Estimated over ~5 years</div></div></div>
+    <div class="mrow"><span class="ml">LTV — monthly donor at 90% retention</span><div style="text-align:right"><div class="mv" style="color:var(--txs)">~$1,380+/member</div><div class="ms">At $12/month — 2× annual donor LTV</div></div></div>
+  </div>
+
+  <div class="good"><strong>The monthly giving opportunity:</strong> Monthly donors renew at 88–92% vs. 75–80% for annual donors. Making monthly giving the default in every conversion flow — including join.kcrw.com, which currently defaults to one-time — doubles LTV over 5 years. This is the single highest-ROI configuration change available with no content or budget impact.</div>
+</div>
+
+<!-- JOIN PAGE -->
+<div class="sec" id="joinpage">
+  <span class="lbl">join.kcrw.com — membership page analysis</span>
+  <h2>The conversion page is in crisis. Traffic down 42%. Mobile score 32/100. Pledge drive is live.</h2>
+  <p class="body">join.kcrw.com is KCRW's sole membership conversion destination — the page where interested audience members become paying members. Every piece of data from May 2026 points in the wrong direction, and a pledge drive is active right now.</p>
+
+  <div class="urgent">⚡ <strong>Pledge drive active.</strong> A 15.8-second Largest Contentful Paint on mobile means first-time visitors — arriving from newsletters, social, or direct search — are waiting nearly 16 seconds for the page to be usable. Industry research shows mobile conversions drop precipitously after 3 seconds. This is the single most urgent fix in this entire assessment.</div>
+
+  <div class="g2" style="margin-top:14px">
+    <div class="card" style="margin:0">
+      <div style="font-size:12px;font-weight:600;color:var(--tx3);margin-bottom:10px;text-transform:uppercase;letter-spacing:.1em">Traffic <span class="source-tag">SimilarWeb Apr 2026</span></div>
+      <div class="mrow"><span class="ml">Monthly visits</span><span class="mv" style="color:var(--txd)">56,602</span></div>
+      <div class="mrow"><span class="ml">MoM change</span><span class="mv" style="color:var(--txd)">−41.99%</span></div>
+      <div class="mrow"><span class="ml">Desktop split</span><span class="mv">49.6%</span></div>
+      <div class="mrow"><span class="ml">Mobile split</span><span class="mv" style="color:var(--txd)">50.4%</span></div>
+      <div class="mrow"><span class="ml">Visit duration</span><span class="mv">3:08</span></div>
+      <div class="mrow"><span class="ml">Bounce rate</span><span class="mv">43.55%</span></div>
+    </div>
+    <div class="card" style="margin:0">
+      <div style="font-size:12px;font-weight:600;color:var(--tx3);margin-bottom:10px;text-transform:uppercase;letter-spacing:.1em">Technical scores <span class="source-tag">PageSpeed May 15, 2026</span></div>
+      <div class="mrow"><span class="ml">Performance (mobile)</span><span class="mv" style="color:var(--txd)">32 / 100</span></div>
+      <div class="mrow"><span class="ml">First Contentful Paint</span><span class="mv" style="color:var(--txd)">4.5s</span></div>
+      <div class="mrow"><span class="ml">Largest Contentful Paint</span><span class="mv" style="color:var(--txd)">15.8s</span></div>
+      <div class="mrow"><span class="ml">Total Blocking Time</span><span class="mv" style="color:var(--txd)">1,960ms</span></div>
+      <div class="mrow"><span class="ml">Accessibility</span><span class="mv" style="color:var(--txw)">88 / 100</span></div>
+      <div class="mrow"><span class="ml">SEO</span><span class="mv" style="color:var(--txs)">100 / 100</span></div>
+    </div>
+  </div>
+
+  <div class="div"></div>
+  <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:8px">Traffic channels — join.kcrw.com <span class="source-tag">SimilarWeb Apr 2026</span></div>
+  <table class="tbl">
+    <thead><tr><th>Channel</th><th>Share</th><th>Implication</th></tr></thead>
+    <tbody>
+      <tr><td style="font-weight:600">Direct</td><td>61.36%</td><td>Most visitors already intend to give — the page is capturing existing intent, not generating new intent</td></tr>
+      <tr><td style="font-weight:600">Organic Search</td><td>10.24%</td><td>Some discovery via search — but 0 paid keywords means high-intent searchers go unaddressed</td></tr>
+      <tr><td style="font-weight:600">Referrals</td><td>5.17%</td><td>kcrw.com sends 62.52% of referral traffic; backseatbabies.substack.com sends 37.48% — anomalous, needs investigation</td></tr>
+      <tr><td style="font-weight:600">Display Ads</td><td>4.40%</td><td>Some display-driven traffic exists</td></tr>
+      <tr class="warn-row"><td style="font-weight:600">Social Organic</td><td>1.31%</td><td>Minimal social-to-conversion pipeline</td></tr>
+    </tbody>
+  </table>
+
+  <div class="alert"><strong>Anomaly: backseatbabies.substack.com.</strong> This Substack property is sending 37.48% of all referral traffic to the KCRW membership page — more than a third of referrals. This is highly unusual and requires internal investigation. It may reflect a cross-promotion, a misattributed traffic source, or bot/spam traffic inflating the numbers. This cannot be verified from external data alone. <span class="source-tag">SimilarWeb Apr 2026</span></div>
+
+  <div class="div"></div>
+  <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:8px">Technical issues identified <span class="source-tag">PageSpeed Insights May 15, 2026</span></div>
+  <table class="tbl">
+    <thead><tr><th>Issue</th><th>Estimated savings</th><th>Priority</th></tr></thead>
+    <tbody>
+      <tr><td style="font-weight:600">Render-blocking requests</td><td>1,470ms</td><td><span class="bx br">Urgent</span></td></tr>
+      <tr><td style="font-weight:600">Improve image delivery</td><td>1,306 KiB</td><td><span class="bx br">Urgent</span></td></tr>
+      <tr><td style="font-weight:600">Reduce unused JavaScript</td><td>1,150 KiB</td><td><span class="bx br">Urgent</span></td></tr>
+      <tr><td style="font-weight:600">Reduce JavaScript execution time</td><td>4.4s</td><td><span class="bx br">Urgent</span></td></tr>
+      <tr><td style="font-weight:600">Minimize main-thread work</td><td>6.0s</td><td><span class="bx br">Urgent</span></td></tr>
+      <tr><td style="font-weight:600">Avoid enormous network payloads</td><td>Total: 4,862 KiB</td><td><span class="bx ba">High</span></td></tr>
+      <tr><td style="font-weight:600">Minify JavaScript</td><td>30 KiB</td><td><span class="bx ba">High</span></td></tr>
+      <tr><td style="font-weight:600">ARIA attributes invalid values</td><td>Accessibility</td><td><span class="bx ba">High</span></td></tr>
+      <tr><td style="font-weight:600">Insufficient color contrast</td><td>Accessibility</td><td><span class="bx bb">Medium</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="info">The Core Web Vitals assessment shows "Passed" in real-user data (Chrome UX Report) — this reflects returning visitors with cached assets. First-time visitors, arriving from newsletters or social during the pledge drive, experience the lab performance: 4.5s FCP and 15.8s LCP. These are the donors KCRW most needs to convert.</div>
+</div>
+
+<!-- TECHNICAL -->
+<div class="sec" id="technical">
+  <span class="lbl">Technical performance — kcrw.com</span>
+  <h2>SEO is strong. Organic search is declining. Zero paid search investment. AI visibility is mid-tier.</h2>
+
+  <div class="sg">
+    <div class="sb"><div class="sn">50</div><div class="sl">Authority Score</div><div class="ss">SEMrush, May 2026</div></div>
+    <div class="sb" style="border-left:2px solid var(--txd)"><div class="sn" style="color:var(--txd)">104K</div><div class="sl">Organic traffic</div><div class="ss">−18.27% — declining</div></div>
+    <div class="sb"><div class="sn">80.5K</div><div class="sl">Organic keywords</div><div class="ss">−1% MoM</div></div>
+    <div class="sb"><div class="sn">33.5K</div><div class="sl">Referring domains</div><div class="ss">−1.88% MoM</div></div>
+    <div class="sb" style="border-left:2px solid var(--txd)"><div class="sn" style="color:var(--txd)">0</div><div class="sl">Paid keywords</div><div class="ss">No paid search anywhere</div></div>
+    <div class="sb"><div class="sn">50</div><div class="sl">AI Visibility score</div><div class="ss">2K mentions, 4.2K cited pages</div></div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:10px">AI Search presence <span class="source-tag">SEMrush May 2026</span></div>
+    <table class="tbl" style="margin:0">
+      <thead><tr><th>Platform</th><th>Mentions</th><th>Cited pages</th></tr></thead>
+      <tbody>
+        <tr><td>ChatGPT</td><td>249</td><td>2,300</td></tr>
+        <tr><td>Google AI Overview</td><td>764</td><td>883</td></tr>
+        <tr><td>Google AI Mode</td><td>474</td><td>1,200</td></tr>
+        <tr><td>Gemini</td><td>529</td><td>597</td></tr>
+        <tr style="font-weight:600"><td>Total</td><td>2,016</td><td>4,200+</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="warn">Organic traffic is down 18.27% and three SEO signals (traffic, keywords, referring domains) are all declining simultaneously. The site audit from SEMrush shows only 10 of 100 crawled pages are healthy — 57 have issues and 32 are redirects. This warrants a full technical SEO audit. <span class="source-tag">SEMrush May 2026</span></div>
+
+  <div class="info"><strong>The paid search gap:</strong> KCRW has zero paid search spend. People are searching "kcrw membership," "donate to kcrw," and "support public radio los angeles" right now — especially during the active pledge drive. A targeted paid search campaign on high-intent membership keywords, even at modest budget, would have a measurable return. That said: paid search should not be activated until the join page mobile performance is fixed. Sending paid traffic to a 15.8s LCP page wastes the spend.</div>
+
+  <div class="card">
+    <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:10px">Site health <span class="source-tag">SEMrush May 2026</span></div>
+    <div class="g3">
+      <div class="sb" style="border-left:2px solid var(--bds)"><div class="sn" style="font-size:16px;color:var(--txs)">10</div><div class="sl">Healthy pages</div><div class="ss">Of 100 crawled</div></div>
+      <div class="sb" style="border-left:2px solid var(--bdd)"><div class="sn" style="font-size:16px;color:var(--txd)">57</div><div class="sl">Pages with issues</div><div class="ss">57% of crawled pages</div></div>
+      <div class="sb" style="border-left:2px solid var(--bdw)"><div class="sn" style="font-size:16px;color:var(--txw)">32</div><div class="sl">Redirect pages</div><div class="ss">Chain redirects slow load</div></div>
+      <div class="sb" style="border-left:2px solid var(--bdd)"><div class="sn" style="font-size:16px;color:var(--txd)">1</div><div class="sl">Broken pages</div><div class="ss">404 or error</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CHURN -->
+<div class="sec" id="churn">
+  <span class="lbl">Churn &amp; retention analysis</span>
+  <h2>Estimated 10,800–14,400 members leave annually. Most are not being systematically asked to stay.</h2>
+  <p class="body">At the standard public radio retention rate of 80–82%, KCRW loses 10,800–14,400 members per year. To reach 80K members from 72K, KCRW needs to acquire 18,000–22,000 new members in the next 12 months — not from ambitious targets, but simply to replace churn and grow modestly. These are estimated figures based on industry benchmarks — actual KCRW retention data is not publicly available.</p>
+
+  <div class="disclaimer">These churn estimates are based on public radio industry benchmarks (80–82% average annual retention). KCRW's actual retention rate is not publicly disclosed. These numbers should be validated against internal data before being used for planning.</div>
+
+  <div class="card">
+    <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:12px">Churn model — industry benchmark estimates</div>
+    <div class="mrow"><span class="ml">Estimated annual retention rate</span><div style="text-align:right"><div class="mv">~80–82%</div><div class="ms">Industry avg; best-in-class 85–90%</div></div></div>
+    <div class="mrow"><span class="ml">Implied annual member churn</span><div style="text-align:right"><div class="mv" style="color:var(--txd)">~10,800–14,400 members</div><div class="ms">Estimate: 72,000 × 18–20%</div></div></div>
+    <div class="mrow"><span class="ml">Value of 5% retention improvement</span><div style="text-align:right"><div class="mv" style="color:var(--txs)">~$500K preserved revenue/year</div><div class="ms">Est. 3,600 members retained × $138</div></div></div>
+    <div class="mrow"><span class="ml">First-year member retention (industry)</span><div style="text-align:right"><div class="mv">~60–70%</div><div class="ms">Hardest year; no onboarding amplifies risk</div></div></div>
+    <div class="mrow"><span class="ml">Monthly donor retention (industry)</span><div style="text-align:right"><div class="mv" style="color:var(--txs)">~88–92%</div><div class="ms">vs. 75–80% for annual donors</div></div></div>
+  </div>
+
+  <div class="div"></div>
+  <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:10px">Six retention levers</div>
+  <div class="g2">
+    <div class="card" style="margin:0"><div style="font-size:18px;margin-bottom:7px">✉</div><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px"><div style="font-size:13px;font-weight:600;color:var(--tx)">New member onboarding sequence</div><span class="bx bg">High</span></div><div style="font-size:12px;color:var(--tx2);line-height:1.55">A 3-email arc in the first 30 days. First-year retention (60–70% industry average) improves measurably with structured onboarding. No evidence of a current sequence from external observation.</div></div>
+    <div class="card" style="margin:0"><div style="font-size:18px;margin-bottom:7px">📅</div><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px"><div style="font-size:13px;font-weight:600;color:var(--tx)">Early renewal trigger sequence</div><span class="bx bg">High</span></div><div style="font-size:12px;color:var(--tx2);line-height:1.55">3 personalized emails starting 45 days before expiry. Most lapsed members leave quietly — early contact wins the save. Should be personalized by content affinity.</div></div>
+    <div class="card" style="margin:0"><div style="font-size:18px;margin-bottom:7px">🔁</div><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px"><div style="font-size:13px;font-weight:600;color:var(--tx)">Monthly giving as default</div><span class="bx bg">High</span></div><div style="font-size:12px;color:var(--tx2);line-height:1.55">Monthly donors renew at 88–92% vs. 75–80% for annual. Making monthly the default in every conversion flow is the single highest-ROI change available.</div></div>
+    <div class="card" style="margin:0"><div style="font-size:18px;margin-bottom:7px">🎟</div><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px"><div style="font-size:13px;font-weight:600;color:var(--tx)">Events as retention hook</div><span class="bx bb">Medium</span></div><div style="font-size:12px;color:var(--tx2);line-height:1.55">Members who attend events renew at higher rates. Email should give members early event access before general public — making membership feel tangible.</div></div>
+    <div class="card" style="margin:0"><div style="font-size:18px;margin-bottom:7px">🏆</div><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px"><div style="font-size:13px;font-weight:600;color:var(--tx)">Tenure milestone recognition</div><span class="bx bb">Medium</span></div><div style="font-size:12px;color:var(--tx2);line-height:1.55">1-year, 5-year, 10-year emails cost essentially nothing and reduce silent lapse significantly.</div></div>
+    <div class="card" style="margin:0"><div style="font-size:18px;margin-bottom:7px">💌</div><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:5px"><div style="font-size:13px;font-weight:600;color:var(--tx)">Lapsed member win-back</div><span class="bx bg">High</span></div><div style="font-size:12px;color:var(--tx2);line-height:1.55">Lapsed members are the highest-converting segment — they already said yes once. A 3-email win-back reactivates at 8–15% in public media organizations.</div></div>
+  </div>
+</div>
+
+<!-- DIGITAL -->
+<div class="sec" id="digital">
+  <span class="lbl">Website &amp; digital performance — kcrw.com</span>
+  <h2>Traffic declining. Organic search weakening. Substack outbound growing. Social drives almost nothing.</h2>
+
+  <div class="g2">
+    <div class="card" style="margin:0">
+      <div style="font-size:12px;font-weight:600;color:var(--tx3);margin-bottom:10px;text-transform:uppercase;letter-spacing:.1em">Site engagement <span class="source-tag">SimilarWeb Apr 2026</span></div>
+      <div class="mrow"><span class="ml">Monthly visits</span><span class="mv">777,454</span></div>
+      <div class="mrow"><span class="ml">MoM change</span><span class="mv" style="color:var(--txd)">−9.7%</span></div>
+      <div class="mrow"><span class="ml">Visit duration</span><span class="mv" style="color:var(--txs)">4:03</span></div>
+      <div class="mrow"><span class="ml">Pages per visit</span><span class="mv">2.96</span></div>
+      <div class="mrow"><span class="ml">Bounce rate</span><span class="mv">46.44%</span></div>
+      <div class="mrow"><span class="ml">Mobile share</span><span class="mv">28.9%</span></div>
+      <div class="mrow"><span class="ml">Global rank</span><span class="mv">#70,375</span></div>
+    </div>
+    <div class="card" style="margin:0">
+      <div style="font-size:12px;font-weight:600;color:var(--tx3);margin-bottom:10px;text-transform:uppercase;letter-spacing:.1em">Traffic channels <span class="source-tag">SimilarWeb Apr 2026</span></div>
+      <div class="mrow"><span class="ml">Direct</span><span class="mv">43.18%</span></div>
+      <div class="mrow"><span class="ml">Organic search</span><span class="mv">27.57%</span></div>
+      <div class="mrow"><span class="ml">Referral</span><span class="mv">3.62%</span></div>
+      <div class="mrow"><span class="ml">Social organic</span><span class="mv">2.48%</span></div>
+      <div class="mrow"><span class="ml">Display</span><span class="mv">0.25%</span></div>
+      <div class="mrow"><span class="ml">Paid search</span><span class="mv">&lt;1%</span></div>
+      <div class="mrow"><span class="ml">Gen AI</span><span class="mv">0.24%</span></div>
+    </div>
+  </div>
+
+  <div style="font-size:13px;font-weight:600;color:var(--tx);margin:14px 0 6px">Top outgoing link destinations <span class="source-tag">SimilarWeb Apr 2026</span></div>
+  <table class="tbl">
+    <thead><tr><th>Destination</th><th>Share</th><th>Change</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td>workforcenow.adp.com</td><td>75.19%</td><td style="color:var(--txs)">↑ 18.22%</td><td>HR/payroll system — expected</td></tr>
+      <tr class="warn-row"><td>substack.com</td><td>10.70%</td><td style="color:var(--txd)">↑ 93.64%</td><td>Nearly doubling — audience leaking to external platform</td></tr>
+      <tr><td>youtube.com</td><td>9.30%</td><td>—</td><td>Expected</td></tr>
+      <tr><td>lodgeroomhlp.com</td><td>2.01%</td><td>—</td><td>Events</td></tr>
+      <tr><td>nytimes.com</td><td>1.43%</td><td>—</td><td>Editorial links</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warn"><strong>Substack outbound is growing fast.</strong> 10.70% of all outgoing clicks from kcrw.com go to Substack, up 93.64% from the prior month. Good Food newsletter content is actively linking to kcrwgoodfood.substack.com from within 5 Things. KCRW is routing its most engaged audience to infrastructure it doesn't own. <span class="source-tag">SimilarWeb Apr 2026, Live email review May 2026</span></div>
+
+  <div style="font-size:13px;font-weight:600;color:var(--tx);margin:14px 0 6px">Social traffic breakdown — kcrw.com <span class="source-tag">SimilarWeb Apr 2026</span></div>
+  <table class="tbl">
+    <thead><tr><th>Platform</th><th>Share of social traffic</th><th>Implication</th></tr></thead>
+    <tbody>
+      <tr class="warn-row"><td style="font-weight:600">Reddit</td><td>35.73%</td><td>Largest social referrer with no dedicated capture experience for first-time visitors</td></tr>
+      <tr><td style="font-weight:600">YouTube</td><td>21.74%</td><td>Growing — Sam Sanders show driving video-to-web flow</td></tr>
+      <tr><td style="font-weight:600">Instagram</td><td>20.57%</td><td>Good Food Reels driving discovery</td></tr>
+      <tr><td style="font-weight:600">Pinterest</td><td>17.20%</td><td>Unexpectedly high — likely food/culture content</td></tr>
+      <tr><td style="font-weight:600">X (Twitter)</td><td>3.90%</td><td>Declining, as expected</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TECH -->
+<div class="sec" id="tech">
+  <span class="lbl">Tech &amp; infrastructure assessment</span>
+  <h2>Four email platforms. Two CRMs. DMARC None. This is a data architecture problem.</h2>
+  <p class="body">KCRW's marketing technology stack reflects a classic nonprofit accumulation pattern: the right tools acquired over time without a unified architecture. Member status, email engagement, event attendance, and behavioral history live in at least five separate systems. This is the primary technical reason why 845K newsletter subscribers cannot be systematically scored and converted at scale.</p>
+
+  <div class="disclaimer">Tech stack identified via BuiltWith (May 2026) and publicly observable site behavior. Internal configuration, integration status, and actual platform usage cannot be verified externally.</div>
+
+  <div class="g2">
+    <div class="card" style="margin:0;border-left:2px solid var(--bds)"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:13.5px;font-weight:600;color:var(--tx)">HubSpot</span><span class="bx bg">Primary</span></div><div style="font-size:10.5px;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px">Marketing automation + email</div><div style="font-size:12px;color:var(--tx2);line-height:1.5">Primary email platform confirmed. Has CRM and workflow capabilities. UTMs confirmed active in outgoing newsletter links. Should be the single source of truth — whether it is in practice is unknown externally.</div></div>
+    <div class="card" style="margin:0;border-left:2px solid var(--bdw)"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:13.5px;font-weight:600;color:var(--tx)">Salesforce</span><span class="bx ba">Parallel CRM</span></div><div style="font-size:10.5px;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px">CRM</div><div style="font-size:12px;color:var(--tx2);line-height:1.5">Running alongside HubSpot. Creates a contact data split. Clear data ownership boundary and sync status are not verifiable externally.</div></div>
+    <div class="card" style="margin:0;border-left:2px solid var(--bdd)"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:13.5px;font-weight:600;color:var(--tx)">Campaign Monitor</span><span class="bx br">Redundant</span></div><div style="font-size:10.5px;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px">Email platform</div><div style="font-size:12px;color:var(--tx2);line-height:1.5">Third email platform alongside HubSpot. Any subscribers here are invisible to HubSpot behavioral automation. Should be consolidated.</div></div>
+    <div class="card" style="margin:0;border-left:2px solid var(--bdd)"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:13.5px;font-weight:600;color:var(--tx)">Emma Inc</span><span class="bx br">Redundant</span></div><div style="font-size:10.5px;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px">Email platform</div><div style="font-size:12px;color:var(--tx2);line-height:1.5">Fourth email platform. Classic nonprofit accumulation. Should be consolidated into HubSpot.</div></div>
+    <div class="card" style="margin:0;border-left:2px solid var(--bdw)"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:13.5px;font-weight:600;color:var(--tx)">Convio (Blackbaud)</span><span class="bx ba">Needs integration</span></div><div style="font-size:10.5px;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px">Nonprofit donor CRM</div><div style="font-size:12px;color:var(--tx2);line-height:1.5">Holds membership and donation records. If disconnected from HubSpot, email engagement and member status can't be correlated — making behavioral conversion impossible at scale.</div></div>
+    <div class="card" style="margin:0;border-left:2px solid var(--bdd)"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:13.5px;font-weight:600;color:var(--tx)">DMARC: None</span><span class="bx br">Fix urgently</span></div><div style="font-size:10.5px;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px">Email authentication</div><div style="font-size:12px;color:var(--tx2);line-height:1.5">DMARC None policy = reduced mailbox provider confidence in delivery. At 845K subscribers, even 5% inbox miss = 42K emails not delivered per send. DNS record change only — no content implications.</div></div>
+  </div>
+</div>
+
+<!-- OPPORTUNITIES -->
+<div class="sec" id="opps">
+  <span class="lbl">Growth opportunities — prioritized</span>
+  <h2>Six specific opportunities. Starting with the pledge drive that is happening right now.</h2>
+  <p class="body">Prioritized by urgency and lift required. The first two can be actioned today. All opportunity revenue estimates are conservative and based on industry benchmarks — not internal KCRW data.</p>
+
+  <div class="exp-row" style="border-left:2px solid var(--bdd)">
+    <div class="exp-hd" onclick="toggle(this)"><div><div style="display:flex;gap:7px;align-items:center;margin-bottom:3px"><span style="font-size:10px;font-weight:600;color:var(--tx3);text-transform:uppercase;letter-spacing:.1em">Opp 1</span><span class="bx br">⚡ Pledge drive live NOW</span></div><div class="pt">Simplify the checkout flow + accelerate mobile conversion</div><div class="psub">32/100 mobile score, 15.8s LCP, 13 steps to the donate button, pledge drive active</div></div><span class="arr">▼</span></div>
+    <div class="exp-body">
+      <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:6px">Highest-impact quick wins <span style="font-weight:400;color:var(--tx3);font-style:italic;text-transform:none;letter-spacing:0">(hours, not weeks)</span></div>
+      <ul style="list-style:none;padding:0;margin:0 0 10px;display:flex;flex-direction:column;gap:4px">
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txs);font-weight:700">·</span>Pre-select monthly giving as the default</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txs);font-weight:700">·</span>Remove unnecessary form fields (e.g. middle name)</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txs);font-weight:700">·</span>Set "No Gift" as the default option</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txs);font-weight:700">·</span>Move match grant messaging above the fold</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txs);font-weight:700">·</span>Enable Apple Pay + Google Pay through existing Stripe integration</li>
+      </ul>
+      <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:6px">Engineering sprint priorities</div>
+      <ul style="list-style:none;padding:0;margin:0 0 10px;display:flex;flex-direction:column;gap:4px">
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txw);font-weight:700">·</span>Reduce render-blocking JavaScript <span style="color:var(--tx3)">(~4.4s potential improvement)</span></li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txw);font-weight:700">·</span>Compress oversized images <span style="color:var(--tx3)">(~1,306 KiB savings)</span></li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txw);font-weight:700">·</span>Defer unused JavaScript <span style="color:var(--tx3)">(~1,150 KiB savings)</span></li>
+      </ul>
+      <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:6px">Why this matters</div>
+      <ul style="list-style:none;padding:0;margin:0 0 10px;display:flex;flex-direction:column;gap:4px">
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--tx3);font-weight:700">·</span>50.4% of join page visitors are currently on mobile</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--tx3);font-weight:700">·</span>Wallet payments materially reduce abandonment by eliminating manual card entry and multi-step checkout friction</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--tx3);font-weight:700">·</span>Faster load times directly impact donation completion rates during live pledge periods</li>
+      </ul>
+      <div style="background:var(--bgs);border-radius:var(--r);padding:9px 12px;margin-bottom:10px">
+        <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--txs);margin-bottom:5px">Expected impact</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:4px">
+          <li style="font-size:12px;color:var(--txs);padding-left:13px;position:relative;font-weight:500;line-height:1.5"><span style="position:absolute;left:0">→</span>Estimated 10–25% lift in mobile conversion rate</li>
+          <li style="font-size:12px;color:var(--txs);padding-left:13px;position:relative;font-weight:500;line-height:1.5"><span style="position:absolute;left:0">→</span>Example prototype: <a href="https://stitch.withgoogle.com/preview/16897140158254972558?node-id=2ebb0ac5870b467f8797cb64d0690f2c" target="_blank" style="color:var(--txs);text-decoration:underline;text-underline-offset:2px">View checkout flow mockup →</a></li>
+        </ul>
+      </div>
+      <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:6px">Implementation resources</div>
+      <ul style="list-style:none;padding:0;margin:0 0 8px;display:flex;flex-direction:column;gap:4px">
+        <li style="font-size:12px;color:var(--tx2);padding-left:13px;position:relative"><span style="position:absolute;left:0;color:var(--tx3)">↗</span><a href="https://stripe.com/docs/apple-pay" target="_blank" style="color:var(--txi);text-decoration:none;border-bottom:.5px solid rgba(26,74,122,.3)">Stripe Apple Pay Documentation</a></li>
+        <li style="font-size:12px;color:var(--tx2);padding-left:13px;position:relative"><span style="position:absolute;left:0;color:var(--tx3)">↗</span><a href="https://stripe.com/docs/google-pay" target="_blank" style="color:var(--txi);text-decoration:none;border-bottom:.5px solid rgba(26,74,122,.3)">Stripe Google Pay Documentation</a></li>
+        <li style="font-size:12px;color:var(--tx2);padding-left:13px;position:relative"><span style="position:absolute;left:0;color:var(--tx3)">↗</span><a href="https://dashboard.stripe.com/settings/payment_methods" target="_blank" style="color:var(--txi);text-decoration:none;border-bottom:.5px solid rgba(26,74,122,.3)">Stripe Payment Methods Settings</a></li>
+      </ul>
+      <div style="font-size:11px;color:var(--tx3);font-style:italic">Sources: PageSpeed audit — May 15, 2026 · BuiltWith — May 2026</div>
+    </div>
+  </div>
+
+  <div class="exp-row" style="border-left:2px solid var(--bdd)">
+    <div class="exp-hd" onclick="toggle(this)"><div><div style="display:flex;gap:7px;align-items:center;margin-bottom:3px"><span style="font-size:10px;font-weight:600;color:var(--tx3);text-transform:uppercase;letter-spacing:.1em">Opp 2</span><span class="bx br">Urgent</span></div><div class="pt">Make monthly giving the pre-selected default</div><div class="psub">One-time tab is currently equal weight; monthly donors are worth 2× in LTV</div></div><span class="arr">▼</span></div>
+    <div class="exp-body">
+      <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:6px">What to change</div>
+      <ul style="list-style:none;padding:0;margin:0 0 10px;display:flex;flex-direction:column;gap:4px">
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txs);font-weight:700">·</span>Pre-select the monthly giving tab on join.kcrw.com</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txs);font-weight:700">·</span>Default the amount to $10/month</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txs);font-weight:700">·</span>Add a benefit callout at the $8+ tier — "Includes NPR+ ad-free"</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txs);font-weight:700">·</span>Configuration change only — no development required on most donation platforms</li>
+      </ul>
+      <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:6px">Why this matters</div>
+      <ul style="list-style:none;padding:0;margin:0 0 10px;display:flex;flex-direction:column;gap:4px">
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--tx3);font-weight:700">·</span>Monthly donors retain at 88–92% vs. 75–80% for annual — a compounding LTV advantage</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--tx3);font-weight:700">·</span>The default option in a donation flow captures 60–75% of completed donations</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--tx3);font-weight:700">·</span>Every donor acquired as monthly during this pledge drive carries ~2× the LTV of an annual donor</li>
+      </ul>
+      <div style="background:var(--bgs);border-radius:var(--r);padding:9px 12px;margin-bottom:8px">
+        <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--txs);margin-bottom:5px">Expected impact</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:4px">
+          <li style="font-size:12px;color:var(--txs);padding-left:13px;position:relative;font-weight:500;line-height:1.5"><span style="position:absolute;left:0">→</span>20–40% shift toward monthly giving among new donors</li>
+          <li style="font-size:12px;color:var(--txs);padding-left:13px;position:relative;font-weight:500;line-height:1.5"><span style="position:absolute;left:0">→</span>Each monthly cohort carries ~$1,380+ LTV vs. ~$690 for annual</li>
+        </ul>
+      </div>
+      <div style="font-size:11px;color:var(--tx3);font-style:italic">Sources: Industry benchmarks · NPR member research</div>
+    </div>
+  </div>
+
+  <div class="exp-row" style="border-left:2px solid var(--bdd)">
+    <div class="exp-hd" onclick="toggle(this)"><div><div style="display:flex;gap:7px;align-items:center;margin-bottom:3px"><span style="font-size:10px;font-weight:600;color:var(--tx3);text-transform:uppercase;letter-spacing:.1em">Opp 3</span><span class="bx br">Urgent</span></div><div class="pt">Convert newsletter CTAs to HTML text with benefits-led copy</div><div class="psub">Image CTAs are invisible when images are blocked; generic copy doesn't sell membership</div></div><span class="arr">▼</span></div>
+    <div class="exp-body">
+      <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:6px">What to change</div>
+      <ul style="list-style:none;padding:0;margin:0 0 10px;display:flex;flex-direction:column;gap:4px">
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txs);font-weight:700">·</span>Replace image-based CTAs in HubSpot newsletter templates with HTML text blocks + a styled button</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txs);font-weight:700">·</span>Rewrite from "Protect What You Trust. Donate Now." → "Early access to Summer Nights. Nick's texts. Film presales. That's what membership gets you. →"</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--txs);font-weight:700">·</span>Test affinity-matched copy: music subscribers hear about Masquerade; news subscribers hear about journalist access</li>
+      </ul>
+      <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:6px">Why this matters</div>
+      <ul style="list-style:none;padding:0;margin:0 0 10px;display:flex;flex-direction:column;gap:4px">
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--tx3);font-weight:700">·</span>Image CTAs are invisible in email clients that block images by default — a significant portion of every send</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--tx3);font-weight:700">·</span>HTML text CTAs render everywhere, can be A/B tested without design changes, and can be personalized in HubSpot without a redesign</li>
+        <li style="font-size:12.5px;color:var(--tx2);padding-left:14px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--tx3);font-weight:700">·</span>845K subscribers at 44% open rate is an exceptional asset — the constraint is the ask, not the audience</li>
+      </ul>
+      <div style="background:var(--bgs);border-radius:var(--r);padding:9px 12px;margin-bottom:8px">
+        <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--txs);margin-bottom:5px">Expected impact</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:4px">
+          <li style="font-size:12px;color:var(--txs);padding-left:13px;position:relative;font-weight:500;line-height:1.5"><span style="position:absolute;left:0">→</span>~1,100 new members/year from 5 Things alone at 0.5% click-to-join improvement</li>
+          <li style="font-size:12px;color:var(--txs);padding-left:13px;position:relative;font-weight:500;line-height:1.5"><span style="position:absolute;left:0">→</span>Measurable within 4 weeks of rollout</li>
+        </ul>
+      </div>
+      <div style="font-size:11px;color:var(--tx3);font-style:italic">Sources: Live email review — May 2026 · HubSpot benchmark data</div>
+    </div>
+  </div>
+
+  <div class="exp-row" style="border-left:2px solid var(--bdw)">
+    <div class="exp-hd" onclick="toggle(this)"><div><div style="display:flex;gap:7px;align-items:center;margin-bottom:3px"><span style="font-size:10px;font-weight:600;color:var(--tx3);text-transform:uppercase;letter-spacing:.1em">Opp 4</span><span class="bx ba">High priority</span></div><div class="pt">Build a 3-email welcome sequence for new subscribers</div><div class="psub">New subscribers are the highest-intent window; no current sequence observable from external review</div></div><span class="arr">▼</span></div>
+    <div class="exp-body"><div style="font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:4px">The opportunity</div><div style="margin-bottom:10px">HubSpot workflow triggered on new subscriber. Day 0: Welcome to KCRW. Day 4: What's on right now + what members get. Day 10: Soft membership ask, monthly giving as default. This is workflow setup, not content creation — the content already exists. Note: whether a welcome sequence already exists internally is not known from external observation.</div><div style="font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--txs);margin-bottom:3px">Estimated impact</div>At 3% conversion × ~5,000 new subscribers/month (estimated) = 1,800 new members/year = ~$248K annually. <span class="source-tag">Industry benchmark; internal subscriber volume not confirmed</span></div>
+  </div>
+
+  <div class="exp-row" style="border-left:2px solid var(--bdw)">
+    <div class="exp-hd" onclick="toggle(this)"><div><div style="display:flex;gap:7px;align-items:center;margin-bottom:3px"><span style="font-size:10px;font-weight:600;color:var(--tx3);text-transform:uppercase;letter-spacing:.1em">Opp 5</span><span class="bx ba">High priority</span></div><div class="pt">Enable Apple Pay / Google Pay via Stripe on join.kcrw.com</div><div class="psub">50.4% mobile visitors, Stripe already installed — one checkbox in Stripe dashboard</div></div><span class="arr">▼</span></div>
+    <div class="exp-body"><div style="font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:4px">The opportunity</div><div style="margin-bottom:10px">KCRW already uses Stripe. Enabling Apple Pay and Google Pay via Stripe's Payment Request Button reduces mobile checkout to: select amount → Face ID → done. No form fields. No friction. Stripe's own data shows Apple Pay increases mobile conversion 10–30% over card forms. Stripe Link (1-click for returning customers) reduces abandonment by 40%+.</div><div style="font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--txs);margin-bottom:3px">Estimated impact</div>10–30% mobile conversion improvement. At 50.4% mobile share of 56K monthly join page visitors = meaningful impact during current pledge drive. <span class="source-tag">BuiltWith May 2026, Stripe research</span></div>
+  </div>
+
+  <div class="exp-row" style="border-left:2px solid var(--bdi)">
+    <div class="exp-hd" onclick="toggle(this)"><div><div style="display:flex;gap:7px;align-items:center;margin-bottom:3px"><span style="font-size:10px;font-weight:600;color:var(--tx3);text-transform:uppercase;letter-spacing:.1em">Opp 6</span><span class="bx bb">Medium priority</span></div><div class="pt">Investigate and address the 42% join page traffic decline</div><div class="psub">56K visits in April, down from an implied ~97K in March — root cause unknown</div></div><span class="arr">▼</span></div>
+    <div class="exp-body"><div style="font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:4px">The opportunity</div><div style="margin-bottom:10px">A 42% single-month traffic drop on the conversion page is significant. Possible causes include: a spring pledge drive ending, changes to where kcrw.com links to join.kcrw.com, a campaign finishing, or a technical issue. Internal GA data would reveal the cause within minutes. From external data alone, the root cause cannot be determined.</div><div style="font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--txs);margin-bottom:3px">Implication</div>If this decline reflects reduced promotion of the join page, restoring those pathways is a higher-priority task than acquiring new audiences. <span class="source-tag">SimilarWeb Apr 2026</span></div>
+  </div>
+</div>
+
+<!-- PLAN -->
+<div class="sec" id="plan">
+  <span class="lbl">90-day action plan</span>
+  <h2>Three phases. Sequenced by urgency. Pledge drive first.</h2>
+  <p class="body">Phase 0 is immediate — pledge drive is live. Phase 1 builds the foundation. Phase 2 builds the conversion architecture. Phase 3 optimizes based on data. All revenue estimates are conservative and based on industry benchmarks, not internal KCRW data.</p>
+
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+    <span class="phase-tag" style="background:#C0392B">⚡ Today</span>
+    <span style="font-size:14.5px;font-weight:600;color:var(--tx)">Pledge drive triage</span>
+    <span style="font-size:11.5px;color:var(--tx3)">While the pledge drive is live, these matter most.</span>
+  </div>
+  <div class="exp-row" style="border-left:2px solid #C0392B"><div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Address highest-impact join page performance issues</div><div class="psub">Owner: Engineering · KPI: LCP below 4s on mobile</div></div><span class="arr">▼</span></div><div class="exp-body">Prioritize: defer non-critical JavaScript, compress and lazy-load hero images, address render-blocking CSS. Even partial improvement during an active pledge drive has direct revenue impact. Full optimization may take a sprint; quick wins are achievable in hours. <span class="source-tag">PageSpeed Insights May 15, 2026</span></div></div>
+  <div class="exp-row" style="border-left:2px solid #C0392B;margin-bottom:20px"><div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Make monthly giving the pre-selected default</div><div class="psub">Owner: Marketing/Product · KPI: % of new donors choosing monthly</div></div><span class="arr">▼</span></div><div class="exp-body">Reorder the donation form so Monthly is the first and pre-selected option. Add a benefit callout at the $8/month tier. This is a configuration or copy change and should be achievable within hours, not days.</div></div>
+
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+    <span class="phase-tag" style="background:#0F6E56">Days 1–30</span>
+    <span style="font-size:14.5px;font-weight:600;color:var(--tx)">Fix the foundation</span>
+    <span style="font-size:11.5px;color:var(--tx3)">No new content, audience, or budget required.</span>
+  </div>
+  <div class="exp-row" style="border-left:2px solid #0F6E56"><div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Investigate the 42% join page traffic drop</div><div class="psub">Owner: Analytics · KPI: Root cause identified in GA within Day 3</div></div><span class="arr">▼</span></div><div class="exp-body">Pull GA data for join.kcrw.com for March vs. April. Identify which channel lost traffic — was it a campaign ending, a broken link on kcrw.com, or a pledge drive conclusion? This question has a definitive answer in internal data and should take under an hour to diagnose. <span class="source-tag">SimilarWeb Apr 2026</span></div></div>
+  <div class="exp-row" style="border-left:2px solid #0F6E56"><div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Enable Apple Pay / Google Pay on join.kcrw.com</div><div class="psub">Owner: Engineering · KPI: Available to mobile users within Day 7</div></div><span class="arr">▼</span></div><div class="exp-body">Enable via Stripe dashboard. Implement Stripe's Payment Request Button as the primary mobile CTA. Fallback to card form for non-Apple/Google Pay devices. This is a Stripe configuration + frontend change. <span class="source-tag">BuiltWith May 2026</span></div></div>
+  <div class="exp-row" style="border-left:2px solid #0F6E56"><div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Convert newsletter CTAs from image to HTML text</div><div class="psub">Owner: Marketing · KPI: CTAs visible in image-blocked email clients</div></div><span class="arr">▼</span></div><div class="exp-body">Update HubSpot newsletter templates to replace image-based CTAs with HTML text blocks and styled buttons. Rewrite copy to be benefits-led. A/B test one message variation per month. Start with 5 Things (220K) and Art Insider (confirmed image-only). <span class="source-tag">Live email review May 2026</span></div></div>
+  <div class="exp-row" style="border-left:2px solid #0F6E56;margin-bottom:20px"><div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Fix DMARC policy (None → Quarantine)</div><div class="psub">Owner: IT/Engineering · KPI: DMARC updated within Day 14</div></div><span class="arr">▼</span></div><div class="exp-body">Update DNS TXT record for all sending domains. Monitor DMARC aggregate reports for 30 days. DNS-only change — no content implications. At 845K subscribers, even 5% inbox improvement = 42K more emails landing per send. <span class="source-tag">BuiltWith May 2026</span></div></div>
+
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+    <span class="phase-tag" style="background:#185FA5">Days 31–60</span>
+    <span style="font-size:14.5px;font-weight:600;color:var(--tx)">Build conversion architecture</span>
+  </div>
+  <div class="exp-row" style="border-left:2px solid #185FA5"><div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Deploy 3-email new subscriber welcome sequence</div><div class="psub">Owner: Marketing · KPI: 3% subscriber→member conversion target</div></div><span class="arr">▼</span></div><div class="exp-body">HubSpot workflow. Day 0: Welcome. Day 4: What's on + what members get. Day 10: Soft ask, monthly default. Workflow setup only — existing content can be repurposed. Note: verify whether a welcome sequence already exists before building.</div></div>
+  <div class="exp-row" style="border-left:2px solid #185FA5"><div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Launch lapsed member win-back sequence</div><div class="psub">Owner: Marketing · KPI: 8% reactivation target</div></div><span class="arr">▼</span></div><div class="exp-body">3-email sequence to members lapsed in the last 12 months. Lapsed members are the highest-converting segment — they already said yes once. Emphasize what's new: shows, events, new app features.</div></div>
+  <div class="exp-row" style="border-left:2px solid #185FA5;margin-bottom:20px"><div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Connect event RSVPs to HubSpot nurture flow</div><div class="psub">Owner: Marketing + Events + Tech · KPI: % of RSVPs entering email welcome flow</div></div><span class="arr">▼</span></div><div class="exp-body">Integrate event RSVP platform with HubSpot. Every RSVP triggers: confirmation + newsletter opt-in offer. Post-event: "How was the show?" + membership ask. 100K RSVPs annually = 100K warm contacts per year currently without a conversion path.</div></div>
+
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+    <span class="phase-tag" style="background:#7A2A00">Days 61–90</span>
+    <span style="font-size:14.5px;font-weight:600;color:var(--tx)">Optimize and scale</span>
+  </div>
+  <div class="exp-row" style="border-left:2px solid #7A2A00"><div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Segment newsletter member asks by content affinity</div><div class="psub">Owner: Marketing · KPI: 15% lift vs. broadcast campaigns (estimated)</div></div><span class="arr">▼</span></div><div class="exp-body">Music subscribers hear about Masquerade and Guest DJ access. News subscribers hear about journalism events and press access. Culture subscribers hear about film screenings and art events. One message, personalized delivery — already possible in HubSpot with proper segmentation.</div></div>
+  <div class="exp-row" style="border-left:2px solid #7A2A00"><div class="exp-hd" onclick="toggle(this)"><div><div class="pt">Evaluate paid search on high-intent membership keywords</div><div class="psub">Owner: Marketing · KPI: Cost per new member vs. pledge drive benchmark</div></div><span class="arr">▼</span></div><div class="exp-body">After the join page mobile performance is fixed (Phase 0/1), test a limited paid search budget targeting: "kcrw membership," "support kcrw," "donate to public radio los angeles." Start with $2–5K test budget. Measure cost per new member against the current $5.75M fundraising spend baseline. <span class="source-tag">SEMrush May 2026, Audited Financials FY2024</span></div></div>
+
+  <div class="sbg" style="margin-top:20px">
+    <div class="lbl" style="margin-bottom:12px">90-day KPI targets (estimated, based on industry benchmarks)</div>
+    <div class="g3" style="grid-template-columns:repeat(auto-fit,minmax(128px,1fr))">
+      <div style="background:var(--bg);border:.5px solid var(--bd);border-radius:var(--r);padding:11px 13px"><div style="font-size:18px;font-weight:600;color:var(--tx)">&lt;4s</div><div style="font-size:11px;color:var(--tx2);margin-top:2px;line-height:1.35">Join page LCP (mobile)</div><div style="font-size:10px;color:var(--tx3);margin-top:1px">vs. current 15.8s</div></div>
+      <div style="background:var(--bg);border:.5px solid var(--bd);border-radius:var(--r);padding:11px 13px"><div style="font-size:18px;font-weight:600;color:var(--tx)">Monthly</div><div style="font-size:11px;color:var(--tx2);margin-top:2px;line-height:1.35">Default giving option</div><div style="font-size:10px;color:var(--tx3);margin-top:1px">On join.kcrw.com</div></div>
+      <div style="background:var(--bg);border:.5px solid var(--bd);border-radius:var(--r);padding:11px 13px"><div style="font-size:18px;font-weight:600;color:var(--tx)">HTML CTAs</div><div style="font-size:11px;color:var(--tx2);margin-top:2px;line-height:1.35">In all newsletters</div><div style="font-size:10px;color:var(--tx3);margin-top:1px">Text-based, not image</div></div>
+      <div style="background:var(--bg);border:.5px solid var(--bd);border-radius:var(--r);padding:11px 13px"><div style="font-size:18px;font-weight:600;color:var(--tx)">3%</div><div style="font-size:11px;color:var(--tx2);margin-top:2px;line-height:1.35">Welcome sequence target</div><div style="font-size:10px;color:var(--tx3);margin-top:1px">Subscriber→member est.</div></div>
+      <div style="background:var(--bg);border:.5px solid var(--bd);border-radius:var(--r);padding:11px 13px"><div style="font-size:18px;font-weight:600;color:var(--tx)">8%</div><div style="font-size:11px;color:var(--tx2);margin-top:2px;line-height:1.35">Win-back target</div><div style="font-size:10px;color:var(--tx3);margin-top:1px">Lapsed member reactivation</div></div>
+      <div style="background:var(--bg);border:.5px solid var(--bd);border-radius:var(--r);padding:11px 13px"><div style="font-size:18px;font-weight:600;color:var(--tx)">+$500K+</div><div style="font-size:11px;color:var(--tx2);margin-top:2px;line-height:1.35">Incremental revenue est.</div><div style="font-size:10px;color:var(--tx3);margin-top:1px">Year 1, conservative</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- REFERENCES -->
+<div class="sec" id="refs">
+  <span class="lbl">References &amp; sources</span>
+  <h2>All sources used in this assessment.</h2>
+  <p class="body" style="margin-bottom:16px">This assessment is based entirely on publicly available sources. No internal KCRW systems were accessed. All sources listed below were retrieved in May 2026.</p>
+
+  <div class="card">
+    <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:14px">Primary sources — data</div>
+    <div class="ref-item"><span class="ref-num">[1]</span> <strong>SimilarWeb — kcrw.com Website Performance</strong>, April 2026. Traffic volume, device distribution, channel mix, social referrals, outbound links. <em>pro.similarweb.com</em></div>
+    <div class="ref-item"><span class="ref-num">[2]</span> <strong>SimilarWeb — join.kcrw.com Website Performance</strong>, April 2026. Membership page traffic, referral sources, device split, traffic decline. <em>pro.similarweb.com</em></div>
+    <div class="ref-item"><span class="ref-num">[3]</span> <strong>SimilarWeb — kcrw.com vs join.kcrw.com Comparative</strong>, April 2026. Cross-domain engagement comparison. <em>pro.similarweb.com</em></div>
+    <div class="ref-item"><span class="ref-num">[4]</span> <strong>Google PageSpeed Insights — join.kcrw.com (Mobile)</strong>, May 15, 2026, 9:43 PM PDT. Performance score 32/100, FCP 4.5s, LCP 15.8s, TBT 1,960ms, accessibility issues. <em>pagespeed.web.dev</em></div>
+    <div class="ref-item"><span class="ref-num">[5]</span> <strong>SEMrush — kcrw.com SEO Dashboard</strong>, May 14–15, 2026. Organic traffic (104K, −18.27%), keywords (80.5K), authority score (50), backlinks (1.3M), AI visibility (50), site health. <em>semrush.com</em></div>
+  </div>
+
+  <div class="card">
+    <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:14px">Primary sources — KCRW published documents</div>
+    <div class="ref-item"><span class="ref-num">[6]</span> <strong>KCRW Media Kit</strong>, February 2026. Member count (72K), newsletter subscriber data (845K, HubSpot analytics), audience profile (Nielsen Scarborough Aug 2024–Jul 2025). Provided via kcrw.com.</div>
+    <div class="ref-item"><span class="ref-num">[7]</span> <strong>KCRW Foundation Audited Financial Statements</strong>, FY2024. Total revenue, membership revenue ($9,957,791), fundraising costs ($5,753,604), operating expenses ($29.4M), investment returns. Public document.</div>
+    <div class="ref-item"><span class="ref-num">[8]</span> <strong>IRS Form 990 — KCRW Foundation</strong>, FY2024. Programmatic data, organizational structure, compensation. Via ProPublica Nonprofit Explorer.</div>
+    <div class="ref-item"><span class="ref-num">[9]</span> <strong>KCRW Annual Report</strong>, 2024. Audience milestones, events data (Summer Nights, Masquerade), new show launches, strategic narrative.</div>
+  </div>
+
+  <div class="card">
+    <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:14px">Primary sources — direct observation</div>
+    <div class="ref-item"><span class="ref-num">[10]</span> <strong>Live newsletter review — Art Insider</strong>, May 2026. <em>email.kcrw.com/richard-mayhew-landscapes-lisson-gallery</em>. CTA format, UTM structure, Substack links.</div>
+    <div class="ref-item"><span class="ref-num">[11]</span> <strong>Live newsletter review — 5 Things to Do This Week</strong>, May 2026. <em>email.kcrw.com/kcrws-5-things-the-plant-sale-bagel-recs-and-more</em>. CTA format, image banners, Substack linking behavior.</div>
+    <div class="ref-item"><span class="ref-num">[12]</span> <strong>BuiltWith Technology Profile — kcrw.com</strong>, May 2026. Email platforms (HubSpot, Campaign Monitor, Emma, Convio/Blackbaud), CRMs (HubSpot, Salesforce), analytics, CDN, DMARC status.</div>
+  </div>
+
+  <div class="card">
+    <div style="font-size:13px;font-weight:600;color:var(--tx);margin-bottom:14px">Benchmarks &amp; industry data</div>
+    <div class="ref-item"><span class="ref-num">[13]</span> <strong>Litmus Email Marketing Benchmarks</strong>. Industry average open rates for media/publishing (22–28%). Used for newsletter open rate comparison.</div>
+    <div class="ref-item"><span class="ref-num">[14]</span> <strong>NPR/Edison Research</strong>. Email subscriber conversion rates vs. podcast/social audiences. Public radio membership conversion benchmarks (5–8% of total audience).</div>
+    <div class="ref-item"><span class="ref-num">[15]</span> <strong>Stripe Research</strong>. Apple Pay conversion lift (10–30% vs. card forms). Stripe Link abandonment reduction (~40%). Referenced in join page optimization recommendations.</div>
+    <div class="ref-item"><span class="ref-num">[16]</span> <strong>Google/Deloitte Mobile Speed Research</strong>. 8–12% conversion improvement per 1-second LCP improvement. Referenced in join page technical recommendations.</div>
+    <div class="ref-item"><span class="ref-num">[17]</span> <strong>Public Media Industry Standards</strong>. Annual donor retention (~75–80%), monthly donor retention (~88–92%), first-year member retention (~60–70%), cost-per-dollar-raised benchmarks (20–35¢).</div>
+  </div>
+
+  <div class="warn" style="margin-top:16px"><strong>Data not available externally:</strong> Internal GA/HubSpot analytics, actual email open rates by newsletter, join.kcrw.com conversion rate, member acquisition by channel, pledge drive performance data, actual KCRW retention rate, HubSpot workflow configurations, Blackbaud/Convio member records. All figures derived from external sources should be cross-referenced against internal data.</div>
+</div>
+
+<!-- CONTACT -->
+<div class="sec" id="contact">
+  <span class="lbl">Contact</span>
+  <h2>Questions, corrections, or follow-up — reach out directly.</h2>
+
+  <div class="card" style="max-width:480px">
+    <div style="font-size:16px;font-weight:600;color:var(--tx);margin-bottom:4px">Mischa Armada</div>
+    <div style="font-size:13px;color:var(--tx2);margin-bottom:16px;line-height:1.6">Growth &amp; Creative Strategy</div>
+    <div class="mrow"><span class="ml">Email</span><span class="mv"><a href="mailto:mischa.armada@gmail.com" style="color:var(--txi)">mischa.armada@gmail.com</a></span></div>
+    <div class="mrow"><span class="ml">Report date</span><span class="mv">May 16, 2026</span></div>
+    <div class="mrow"><span class="ml">Version</span><span class="mv">2.0 — Updated with PageSpeed, SEMrush, SimilarWeb join.kcrw.com data</span></div>
+    <div class="mrow"><span class="ml">Prepared for</span><span class="mv">KCRW Leadership</span></div>
+  </div>
+
+  <div class="sbg" style="margin-top:20px;max-width:560px">
+    <div class="lbl" style="margin-bottom:8px">A note on this assessment</div>
+    <p style="font-size:13px;color:var(--tx);line-height:1.75">Everything in this report was built from publicly available data — SimilarWeb, PageSpeed Insights, SEMrush, live newsletter emails, published financials, and KCRW's own media kit. I don't have access to internal analytics, and I've tried to be clear throughout about what's confirmed vs. estimated. The findings are directional. The opportunity is real. I'd welcome the chance to validate all of this against KCRW's actual numbers — and to help act on it.</p>
+  </div>
+
+  <div style="margin-top:32px;padding-top:20px;border-top:.5px solid var(--bd);font-size:11px;color:var(--tx3);line-height:1.7">
+    Mischa Armada · Growth &amp; Creative Strategy · Prepared for KCRW Leadership. This document is confidential and intended for the named recipient. Data sources are cited throughout and in the References section. All revenue estimates are conservative projections based on public radio industry benchmarks and should be validated against internal KCRW data before use in planning or budget decisions.
+  </div>
+</div>
+
+</div><!-- /main -->
+</div><!-- /wrap -->
+
+<script>
+function show(id) {
+  document.querySelectorAll('.sec').forEach(function(s){s.classList.remove('on')});
+  document.querySelectorAll('.nb').forEach(function(b){b.classList.remove('on')});
+  var sec = document.getElementById(id);
+  if(sec) sec.classList.add('on');
+  var btn = document.querySelector('[data-sec="'+id+'"]');
+  if(btn) btn.classList.add('on');
+  var main = document.getElementById('main');
+  if(main) main.scrollTop = 0;
+}
+function toggle(hd) {
+  var body = hd.nextElementSibling;
+  var arr = hd.querySelector('.arr');
+  var isOpen = body.style.display === 'block';
+  body.style.display = isOpen ? 'none' : 'block';
+  if(arr) arr.textContent = isOpen ? '▼' : '▲';
+  hd.classList.toggle('open', !isOpen);
+}
+function toggleCh(el) {
+  var body = el.nextElementSibling;
+  var isOpen = body.style.display === 'block';
+  body.style.display = isOpen ? 'none' : 'block';
+  el.style.background = isOpen ? '' : 'var(--bg2)';
+}
+</script>
+</body>
+</html>
