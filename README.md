@@ -6,6 +6,6 @@ This was my portfolio site from the COVID era when I was experimenting with buil
 
 ## New Site
 
-For my current portfolio and work, visit: **[mischarmada.com](https://www.mischarmada.com/)**
+For my current portfolio and work, visit: **[mischaarmada.com](https://www.mischaarmada.com/)**
 
 Thanks for stopping by! 👋
